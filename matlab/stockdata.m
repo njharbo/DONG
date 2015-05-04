@@ -14,8 +14,10 @@ end
 P(P==10^10)=NaN;
 %P(P==0)=NaN;
 
-%Remove extreme outliers
-P(abs(P)>0.75)=NaN;
+%Insert NAN in start of gdp suez, where a stock split has not been
+%accounted for 
+P(351,6)=NaN;
+P(268,6)=NaN;
 
 %moment of distribtion
 mean_elec_stocks=mean(P(~isnan(P)))
