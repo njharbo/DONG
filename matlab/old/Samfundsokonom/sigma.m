@@ -1,0 +1,61 @@
+clear all
+
+file='../../data/volatilities/tomatlab.csv';
+data=csvread(file,1,0);
+
+date=data(:,1);
+days=data(:,2);
+vol=data(:,3);
+
+
+for i=1:length(data)
+    %hej(1,1,1)=[data(1,1), data(1,2), data(1,3)]
+    if i==1
+        j=1;
+        k=1;
+    elseif data(i,1)>data(i-1,1)
+        j=j+1; %date counter
+    end
+    dates(j)=[data(i,1)];
+end
+
+file='../../data/volatilities/tomatlab_days.csv';
+days=csvread(file,1,0);
+
+hej=zeros(length(days),length(dates)); 
+
+for i=1:length(data)
+    %hej(1,1,1)=[data(1,1), data(1,2), data(1,3)]
+    if i==1
+        j=1;
+        k=1;
+    elseif data(i,1)>data(i-1,1)
+        j=j+1; %date counter
+        k=1;   %dates counter
+    elseif data(i,2)>data(i-1,2)
+        k=k+1;
+    end
+    hej(k,j)=[data(i,3)];
+    i=i+1;
+    if hej(k,j)==0
+        hej(k,j)=NaN;
+    end
+end
+
+%Figure: kurve
+surf(1:length(dates), days, hej)
+title('Implied volatility p? call optioner, Ishares Global Energy (IXC)')
+xlabel('2005-2015')
+ylabel('Varighed (dage)')
+zlabel('\sigma')
+saveas(gcf, 'figs/implied_vol_curve.png')
+%datetick('x',26)
+
+%Figure: varighed 780
+plot(1:length(dates), hej(10,:))
+title('Implied volatility p? call option, Ishares Global Energy (IXC), varighed=730 dage')
+xlabel('2005-2015')
+ylabel('\sigma')
+saveas(gcf, 'figs/implied_vol_730.png')
+
+
