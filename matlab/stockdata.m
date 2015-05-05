@@ -1,4 +1,3 @@
-
 %% Load electricity companies
 clear P temp mod;
 i=1;
@@ -23,8 +22,6 @@ P(268,6)=NaN;
 mean_elec_stocks=mean(P(~isnan(P)))
 std_elec_stocks=(var(P(~isnan(P))))^(1/2)
 
-%display dist
-%hist(P(~isnan(P)),1000)
 
 %make empirical dist
 [f_elec,x_elec] =ecdf(P(~isnan(P)));
@@ -44,10 +41,9 @@ end
 
 Pelec=P;
 
-%make empirical dist worng
+%make alternative empirical dist
 [f_elec_wrong,x_elec_wrong] =ecdf(P(~isnan(P)));
 returns_elec=P(~isnan(P));
-%round(random('unif',1)*length(returns_elec))
 
 %% Load gas and oil companies
 clear P temp mod;

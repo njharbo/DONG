@@ -96,4 +96,3 @@ end
 
 run figures.m;
 
-run tables.m;
