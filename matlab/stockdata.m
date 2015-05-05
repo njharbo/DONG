@@ -84,22 +84,9 @@ f_gasoil=0.001:0.001:1;
 
 P1=P;
 
-%Figure
-nj=figure(3)
-subplot(2,1,1);
-hist(P1(~isnan(P1)),100)
-title('A. Electricitetsselskaber')
-ylabel('Antal')
-xlabel('Daglig v?rditilv?kst')
-%set(gca,'xlim',[-0.5 0.5])
-%axis([-0.5 0.5 0 2500])
-subplot(2,1,2);
-hist(P(~isnan(P)),100)
-title('B. Olie og gasselskaber')
-ylabel('Antal')
-xlabel('Daglig v?rditilv?kst')
-%set(gca,'xlim',[-0.5 0.5])
-%axis([-0.5 0.5 0 2500])
-saveas(nj, 'figs/data_hist.png')
+%make alternative empirical dist
+returns_gasoil=P(~isnan(P));
+
+
 
 close all;

@@ -22,8 +22,6 @@ P(268,6)=NaN;
 mean_elec_stocks=mean(P(~isnan(P)))
 std_elec_stocks=(var(P(~isnan(P))))^(1/2)
 
-%display dist
-%hist(P(~isnan(P)),1000)
 
 %make empirical dist
 [f_elec,x_elec] =ecdf(P(~isnan(P)));
@@ -43,10 +41,9 @@ end
 
 Pelec=P;
 
-%make empirical dist worng
+%make alternative empirical dist
 [f_elec_wrong,x_elec_wrong] =ecdf(P(~isnan(P)));
 returns_elec=P(~isnan(P));
-%round(random('unif',1)*length(returns_elec))
 
 %% Load gas and oil companies
 clear P temp mod;
@@ -87,22 +84,9 @@ f_gasoil=0.001:0.001:1;
 
 P1=P;
 
-%Figure
-nj=figure(3)
-subplot(2,1,1);
-hist(P1(~isnan(P1)),100)
-title('A. Electricitetsselskaber')
-ylabel('Antal')
-xlabel('Daglig v?rditilv?kst')
-%set(gca,'xlim',[-0.5 0.5])
-%axis([-0.5 0.5 0 2500])
-subplot(2,1,2);
-hist(P(~isnan(P)),100)
-title('B. Olie og gasselskaber')
-ylabel('Antal')
-xlabel('Daglig v?rditilv?kst')
-%set(gca,'xlim',[-0.5 0.5])
-%axis([-0.5 0.5 0 2500])
-saveas(nj, 'figs/data_hist.png')
+%make alternative empirical dist
+returns_gasoil=P(~isnan(P));
+
+
 
 close all;

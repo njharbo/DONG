@@ -13,7 +13,7 @@ g=G^(1/4)-1;
 rgov=0.01;
 expinf=0.01;
 inigovshare=0.81;
-sim=1000; %Number of simulations
+sim=10000; %Number of simulations
 simper=252*4; %Number of trading days simulated
 exante=1*265; 
 backwardinf=0.02;
@@ -44,26 +44,8 @@ clear return_elec_sim return_gasoil_sim a rsave r return_elec_pendk return_elec_
 
 for j=1:sim
     
-    for i=(1:1:simper)
-        if i==1
-            %a(i)=1+x_elec(randi(length(x_elec),1));
-            a(i)=1+returns_elec(unidrnd(length(returns_elec)));
-            b(i)=1+x_gasoil(randi(length(x_gasoil),1));
-        else
-            %a(i)=a(i-1)*(1+x_elec(randi(length(x_elec),1)));
-            a(i)=a(i-1)*(1+returns_elec(unidrnd(length(returns_elec))));
-            b(i)=b(i-1)*(1+x_gasoil(randi(length(x_gasoil),1)));
-        end
-        
-        if a(i)<0
-            a(i)=0;
-        end
-        
-        if b(i)<0
-            b(i)=0;
-        end
-        
-    end
+    a=prod(1+returns_elec(unidrnd(length(returns_elec),simper,1)));
+    b=prod(1+returns_gasoil(unidrnd(length(returns_gasoil),simper,1)));
     
     r(1)=a(length(a))^(1/n)-1;
     r(2)=b(length(b))^(1/n)-1;
@@ -96,3 +78,4 @@ end
 
 run figures.m;
 
+run tables.m;

@@ -95,3 +95,21 @@ axis([-100 10 0 2500])
 set(gca, 'Fontsize',14)
 saveas(nj, 'figs/sim_return.pdf')
 
+%% Data figure
+nj=figure(3)
+subplot(2,1,1);
+hist(P1(~isnan(P1)),100)
+title('A. Electricitetsselskaber')
+ylabel('Antal')
+xlabel('Daglig v?rditilv?kst')
+set(gca,'xlim',[-0.5 0.5])
+%axis([-0.5 0.5 0 2500])
+subplot(2,1,2);
+hist(P(~isnan(P)),100)
+title('B. Olie og gasselskaber')
+ylabel('Antal')
+xlabel('Daglig v?rditilv?kst')
+set(gca,'xlim',[-0.5 0.5])
+%axis([-0.5 0.5 0 2500])
+saveas(nj, 'figs/data_hist.png')
+
