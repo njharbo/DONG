@@ -17,6 +17,9 @@ P(P==10^10)=NaN;
 %accounted for 
 P(351,6)=NaN;
 P(268,6)=NaN;
+%Fortum to be fixed better:
+P(833,5)=NaN;
+P(834,5)=NaN;
 
 %moment of distribtion
 mean_elec_stocks=mean(P(~isnan(P)))
@@ -26,23 +29,23 @@ std_elec_stocks=(var(P(~isnan(P))))^(1/2)
 %make empirical dist
 [f_elec,x_elec] =ecdf(P(~isnan(P)));
 i=1
-for x=0.001:0.001:1
+for x=0.01:0.01:1
 ur(i)=x;
 mod(i)=interp1(f_elec,x_elec,ur(i),'linear');
 i=i+1;
 end
 clear x_elec f_elec
 x_elec=mod;
-f_elec=0.0001:0.0001:1;
+f_elec=0.01:0.01:1;
 
-for i=1:10000
+for i=1:100
 x(i)=x_elec(randi(length(x_elec),1));
 end
 
 Pelec=P;
 
 %make alternative empirical dist
-[f_elec_wrong,x_elec_wrong] =ecdf(P(~isnan(P)));
+[f_elec_ecdf,x_elec_ecdf] =ecdf(P(~isnan(P)));
 returns_elec=P(~isnan(P));
 
 %% Load gas and oil companies
