@@ -1,26 +1,8 @@
 clear all
 
-%% Set parameters
-sand=31.5;
-indskud_gs=11;
-initial_gs=31.5;
-indskud_pd=8;
-initial_pd=46;
-n=4;
-keep=0.51;
-G=(1+0.0013+0.0225)*(1+0.0044+0.0225)*(1+0.0088+0.0225)*(1+0.0146+0.0225);
-g=G^(1/4)-1;
-rgov=0.01;
-expinf=0.01;
-inigovshare=0.81;
-sim=10000; %Number of simulations
-simper=252*4; %Number of trading days simulated
-exante=1*265; 
-backwardinf=0.02;
-infl=(1+backwardinf)^(1/252)-1; %
-vstart=24.5;
-vspan=1;
-vend=40.5;
+%% Set parameters and load data
+
+run parameters.m
 
 run stockdata.m;
 
@@ -44,6 +26,7 @@ clear return_elec_sim return_gasoil_sim a rsave r return_elec_pendk return_elec_
 
 for j=1:sim
     
+    %Note: This method is an order of magnitude faster than last (loop) method
     a=prod(1+returns_elec(unidrnd(length(returns_elec),simper,1)));
     b=prod(1+returns_gasoil(unidrnd(length(returns_gasoil),simper,1)));
     
@@ -59,6 +42,7 @@ for j=1:sim
         [return_elec_gs(1,j,k) return_elec_gs(2,j,k)]=gs(sand, indskud_gs, initial_gs, n, keep, g,r(1)+expinf,inigovshare);
         [return_elec_public(1,j,k) return_elec_public(2,j,k)]=public(sand, indskud_gs, initial_gs, n, keep, g,r(1)+expinf,rgov,inigovshare);
         [return_elec_statusquo(1,j,k) return_elec_statusquo(2,j,k)]=statusquo(sand, initial_gs, n, keep, r(1)+expinf,inigovshare);
+       
         
         %Oil and gas
         [return_oil_pendk(1,j,k) return_oil_pendk(2,j,k)]=pensdk(sand, indskud_pd, initial_pd, n, keep, g,r(2)+expinf,inigovshare);

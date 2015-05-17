@@ -2,6 +2,7 @@
 clear P temp mod;
 i=1;
 P=10^10*ones(10000,9);
+
 for str = {'cez','drax', 'edf', 'eon', 'fortum', 'gdf', 'verbund', 'iberdrole', 'rwe' }
     file=strcat('../data/Euro_electricity/',str,'.csv');
     temp=diff(log(flipud(csvread(file{1},1+exante,6))))-infl;
@@ -17,9 +18,7 @@ P(P==10^10)=NaN;
 %accounted for 
 P(351,6)=NaN;
 P(268,6)=NaN;
-%Fortum to be fixed better:
-P(833,5)=NaN;
-P(834,5)=NaN;
+
 
 %moment of distribtion
 mean_elec_stocks=mean(P(~isnan(P)))
