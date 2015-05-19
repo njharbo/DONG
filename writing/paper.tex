@@ -18,7 +18,7 @@
 \usepackage[danish=quotes]{csquotes}
 
 
-\title{En Ex Ante Evaluering af DONG Aftalen\thanks{Vi er taknemmelige for kommentarer fra Hannes Malmberg, Hans Henrik Sievertsen, Andreas Noack, Erik {\"O}berg, Kasper Harbo Hansen, Line Elvstrøm Ekner, Jon Kjellund og Jens Houe Thomsen. Alle udestående fejl er naturligvis vores egne.  Programmer og data er tilgængelige på forespørgsel.} \\ \emph{Foreløbigt og ikke til cirkulation}}
+\title{En Ex Ante Evaluering af DONG Aftalen\thanks{Vi er taknemmelige for kommentarer fra Hannes Malmberg, Hans Henrik Sievertsen, Andreas Noack, Robin Brejnholt, Erik {\"O}berg, Kasper Harbo Hansen, Line Elvstrøm Ekner, Jon Kjellund og Jens Houe Thomsen. Alle udestående fejl er naturligvis vores egne.  Programmer og data er tilgængelige på forespørgsel.} \\ \emph{Foreløbigt og ikke til cirkulation}}
 \author{Niels-Jakob Harbo Hansen\thanks{Korresponderende forfatter. Stockholm University, IIES.  Email: \texttt{nielsjakobharbo.hansen@iies.su.se}. } \hspace{0.1 mm} og Guan Yang\thanks{New York University.  Email: \texttt{guan@yang.dk}}}
 \begin{document}
 
@@ -541,21 +541,21 @@ Lad os til slut undersøge robustheden af de forskellige antagelser gjort ovenfo
 %	\end{minipage}
 %\end{table}
 
-\subsection{Usikkerhed om udnyttelse af salgsret - To be updated}
+\subsection{Usikkerhed om udnyttelse af salgsret}
 
- Vi antog endvidere, at investorerne eksekverer deres salgsret, hvis deres aktier ult. 2017 var mindre værd end prisen indbygget salgretten. Dette kræver imidlertid, at investorerne er i stand til fuldt ud at vurdere DONGs markedsværdi på det givne tidspunkt. Dette er i praksis svært, eftersom DONG ikke handles på børsen på det pågældende tidspunkt. I praksis kan prisen derfor kun estimeres med betydelig usikkerhed og  investorerne vil derfor kunne komme til, at (1) eksekvere deres salgsret i situationer hvor markedsværdien reelt er højere end prisen i salgsretten og (2) ikke eksekvere salgretten i situationer hvor markedsværdien reelt er lavere end prisen i salgsretten. Begge typer af fejl ville være gavnlige for staten. For at vurdere hvor følsomme vores simulationer er overfor sådanne fejl, antager vi derfor nu, at prisen investorerne fatter deres beslutning ud fra er den reale markedspris plus en stokastisk variabel $X$, hvor $X \sim \mathcal{N}(0, \sigma^2)$. Figur \ref{fig:usikkerhed} viser, at statens tab på aftalen ift. det offentlige alternativ godt nok er faldende i $\sigma^2$, men selv med $\sigma^2=20$ er det forventede tab 1 mia DKK.\footnote{For at vurdere hvorvidt $\sigma^2=20$ er højt eller lavt plotter vi i figur \ref{fig:observed_actual_value} den sande værdi mod den observerede værdi af DONG.}
+ Vi antog endvidere, at investorerne eksekverer deres salgsret, hvis deres aktier ult. 2017 var mindre værd end prisen indbygget salgretten. Dette kræver imidlertid, at investorerne er i stand til fuldt ud at vurdere DONGs markedsværdi på det givne tidspunkt. Dette er i praksis svært, eftersom DONG ikke handles på børsen på det pågældende tidspunkt. I praksis kan prisen derfor kun estimeres med betydelig usikkerhed og  investorerne vil derfor kunne komme til, at (1) eksekvere deres salgsret i situationer hvor markedsværdien reelt er højere end prisen i salgsretten og (2) ikke eksekvere salgretten i situationer hvor markedsværdien reelt er lavere end prisen i salgsretten. Begge typer af fejl ville være gavnlige for staten. For at vurdere hvor følsomme vores simulationer er overfor sådanne fejl, antager vi derfor nu, at prisen investorerne fatter deres beslutning ud fra er den reale markedspris plus en stokastisk variabel $X$, hvor $X \sim \mathcal{N}(0, \sigma^2)$. Figur \ref{fig:usikkerhed} viser, at statens tab på aftalen ift. det offentlige alternativ godt nok er faldende i $\sigma^2$, men selv med $\sigma^2=20$ er det forventede tab over 1 mia DKK.%\footnote{For at vurdere hvorvidt $\sigma^2=20$ er højt eller lavt plotter vi i figur \ref{fig:observed_actual_value} den sande værdi mod den observerede værdi af DONG.}
  
  \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/return_variance}
+\includegraphics[scale=0.8]{../matlab/figs/return_variance.pdf}
 \caption{Fordeling af gevinst p\aa{} privat aftale ift. offentlig aftale som funktion af $\sigma^2$. 1000 simulationer per $\sigma^2$. }
 \label{fig:usikkerhed}
 \end{figure}
 
-\begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/observed_actual_value}
-\caption{Observeret og faktisk v\ae{}rdi af DONG for $\sigma=20$.}
-\label{fig:observed_actual_value}
-\end{figure}
+%\begin{figure}
+%\includegraphics[scale=0.8]{../matlab/figs/observed_actual_value}
+%\caption{Observeret og faktisk v\ae{}rdi af DONG for $\sigma=20$.}
+%\label{fig:observed_actual_value}
+%\end{figure}
 
 \subsection{Fordeling af fremtidige afkast}
 

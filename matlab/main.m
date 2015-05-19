@@ -13,7 +13,7 @@ i=1
 for r=-1:0.01:2
     data(i,1)=100*r;
     [data(i,2,1) data(i,2,2) data(i,2,3)]=pensdk(sand, indskud_pd, initial_pd, n, keep, g,r,inigovshare);
-    [data(i,3,1) data(i,3,2) data(i,3,3)]=gs(sand, indskud_gs, initial_gs, n, keep, g,r,inigovshare);
+    [data(i,3,1) data(i,3,2) data(i,3,3)]=gs(sand, indskud_gs, initial_gs, n, keep, g,r,inigovshare,0);
     [data(i,4,1) data(i,4,2) data(i,4,3)]=public(sand, indskud_gs, initial_gs, n, keep, g,r,rgov,inigovshare);
     [data(i,5,1) data(i,5,2) data(i,5,3)]=statusquo(sand, initial_gs, n, keep, r,inigovshare);
     i=i+1;
@@ -39,14 +39,14 @@ for j=1:sim
         
         %European Energy stocks
         [return_elec_pendk(1,j,k) return_elec_pendk(2,j,k)]=pensdk(sand, indskud_pd, initial_pd, n, keep, g,r(1)+expinf,inigovshare);
-        [return_elec_gs(1,j,k) return_elec_gs(2,j,k)]=gs(sand, indskud_gs, initial_gs, n, keep, g,r(1)+expinf,inigovshare);
+        [return_elec_gs(1,j,k) return_elec_gs(2,j,k)]=gs(sand, indskud_gs, initial_gs, n, keep, g,r(1)+expinf,inigovshare,0);
         [return_elec_public(1,j,k) return_elec_public(2,j,k)]=public(sand, indskud_gs, initial_gs, n, keep, g,r(1)+expinf,rgov,inigovshare);
         [return_elec_statusquo(1,j,k) return_elec_statusquo(2,j,k)]=statusquo(sand, initial_gs, n, keep, r(1)+expinf,inigovshare);
        
         
         %Oil and gas
         [return_oil_pendk(1,j,k) return_oil_pendk(2,j,k)]=pensdk(sand, indskud_pd, initial_pd, n, keep, g,r(2)+expinf,inigovshare);
-        [return_oil_gs(1,j,k) return_oil_gs(2,j,k)]=gs(sand, indskud_gs, initial_gs, n, keep, g,r(2),inigovshare);
+        [return_oil_gs(1,j,k) return_oil_gs(2,j,k)]=gs(sand, indskud_gs, initial_gs, n, keep, g,r(2),inigovshare,0);
         [return_oil_public(1,j,k) return_oil_public(2,j,k)]=public(sand, indskud_gs, initial_gs, n, keep, g,r(2)+expinf,rgov,inigovshare);
         [return_oil_statusquo(1,j,k) return_oil_statusquo(2,j,k)]=statusquo(sand, initial_gs, n, keep, r(2)+expinf,inigovshare);
         
