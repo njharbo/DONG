@@ -43,22 +43,10 @@ En vigtig pointe er dog, at private investorer reelt \emph{ikke} betalte 107 DKK
 
 Det er vigtigt at understrege, at der en række usikkerhedsmomenter i disse beregninger. Dette drejer sig om 1) valget af afkastfordeling, 2) fastsættelse af DONGs initiale værdi og 3) valget af volatilitet i beregningen af put-optionens værdi. Vi undersøger derfor beregningernes robusthed ift. disse antagelser i vores appendix.
 
-Vi er ikke de første, der har undersøgt DONG aftalen. \cite{Bachman2014} analyserer aftalen og de argumenter der har været fremført for og imod salget. Forfatterne konkluderer, at mange af de brugte argumenter imod aftalen har været præget af misforståelser, men forfatterne har også svært ved at se formålet ved den kompliceret transaktion, som staten valgte ift.\ en mere simpel kapitaludvidelse hvor private investorer, og evt. staten, indskød den kapital DONG manglede. Vi komplementerer artiklen af \cite{Bachman2014} ved at en \emph{kvantitativ} evaluering af den indgåede aftale ift.\ et offentligt alternativ. %Samtidig kvantificerer vi salgsrettens værdi, og dermed også den pris de private investorer reelt betalte for DONGs egenkapital.
+Vi er ikke de første, der har undersøgt DONG aftalen. \cite{Bachman2014} analyserer aftalen og de argumenter der har været fremført for og imod salget. Forfatterne konkluderer, at mange af de brugte argumenter imod aftalen har været præget af misforståelser, men forfatterne har også svært ved at se formålet ved den kompliceret transaktion, som staten valgte ift.\ en mere simpel kapitaludvidelse hvor private investorer, og evt. staten, indskød den kapital DONG manglede. Vi komplementerer artiklen af \cite{Bachman2014} ved at en \emph{kvantitativ} evaluering af den indgåede aftale ift.\ et offentligt alternativ. 
 
 Resten af artiklen er opbygget som følger; I afsnit 1 gennemgår vi kort aftalen fra 2014. I afsnit 2 vurderer vi aftalen overfor et offentligt alternativ, og i afsnit 3 konkluderer vi. I appendix undersøger vi robustheden af vores beregninger. 
 
-%I artiklen stiller vi spørgsmålet: Var aftalen økonomisk set fornuftig for staten? Konkret evaluerer vi aftalen mod et offentligt alternativ hvor staten selv havde indskudt de 11 mia.\ DKK og finansieret dette ved udstedelse af statsobligationer. Vi finder følgende  resultater:
-%\begin{itemize}
-%\item Afkaststrukturen på den indgåede aftale \emph{vis-a-vis} et rent offentligt alternativt er stærkt asymmetrisk. Konkret opnår staten bare en gevinst på aftalen hvis den gennemsnitlige vækst i DONGs værdi bliver mindre end -3.6 \% per år. Imidlertid er denne gevinst meget begrænset ift. det tab staten opnår hvis DONGs værdi udvikler sig positivt. Dvs. at staten med aftalen hovedsageligt har forsikret sig imod et positivt afkast, men tabet under et negativt jf. med et   
-%
-%\item Den indgåede aftale giver kun et bedre afkast end et rent offentligt alternativ hvis den gennemsnitlige  årlige vækst bliver \emph{mindre} end -3.6 \% frem til 2018.  Staten kunne et offentligt alternativ, hvor man selv havde skudt de 11 mia.\ DKK ind i DONG, kunne have opnået et forventet afkast på 2 mia.\ udover hvad man opnåede med den indgåede aftale.
-%\item  Sandsynligheden for at den indgåede aftale giver et bedre afkast end det offentlige alternativ er cirka 60 \%, men qua en asymmetrisk afkaststruktur, hvor staten tager en del af downside men ikke får nogen upside, opvejer det bedre afkast i scenarier hvor DONGs værdi falder ikke det afkast staten går glip af i  scenarier hvor DONGs værdi stiger.
-%\item Aktieprisen de private investorer betalte for DONG's egenkapital var reelt ikke var 107 DKK men derimod cirka 86 DKK. Dette skyldes at de 107 DKK var prisen for både egenkapital og en salgsret, hvor sidstnævnte også har en værdi. 
-%\end{itemize}
-%
-%Dette er ikke det forste studie som analyserer DONG aftalen. Bachman et al. (2014) analyserer aftalen og de argumenter der har varet fremfort for og imod salget. Forfatterne konkluderer at mange af de brugte argumenter imod aftalen har vaeret praeget af misforståelser, men modsat har forfatterne også svaert ved at se formålet ved en så kompliceret transaktion ift. en mere kapitaludvidelse hvor staten f.eks. selv indskod den kapital DONG manglede. I forhold til denne artikel bidrager vi med en \emph{kvantitativ} evaluering af den indgåede aftale ift. et offentligt alternativ. Samtidig kvantificerer vi salgsrettens vaerdi, og dermed også den pris de private investorer reelt betalte for DONGs egenkapital.
-%
-%Resten af artiklen er opbygget som følger. I afsnit 1 gennemgår vi aftalen mellem staten og de private investorer og i afsnit 2 vurderer vi aftalen overfor et offentligt alternativ. I afsnit 3 konkluderer vi.
 
 \section{Aftalen}
 I efteråret 2013 indgik staten en aftale med et konsortium af private investorer om en aktieudvidelse i DONG Energy A/S på 11 mia. DKK.\footnote{Dette afsnit bygger på \citet{FM2013a}.} Specifikt indskød det Goldman Sachs-kontrollerede selskab New Energy Investment (NEI) 8 mia. DKK, mens de to danske pensionskasser, ATP og PFA, samlet indskød 3 mia. DKK.\footnote{Dertil kom op til 2.6 mia DKK yderligere fra eksisterende mindretalsaktionærer, hvilket vi dog vil se bort fra i analysen nedenfor.}
@@ -114,7 +102,6 @@ Her er $V_0$ den værdi som DONGs eksisterende egenkapital blev forhandlet til, 
 \label{fig:privat_off}
 \end{figure}
 
-%Bemærk at en underliggende antagelse her er at de private investorerne har købt DONG til markedsprisen. Mere generelt er $K$ i udtrykkene ovenfor lig med $\frac{K}{V_0+K} \left( V^m_0+K\right)$, hvor $V^m_0$ er lig med markedsværdien af egenkapitalen før kapital udvidelsen og $V_0$ er den prise egenkapitalen blev handlet til i aftalen. Hvis $V_0=V^m_0$ så er $\frac{K}{V_0+K} \left( V^m_0+K\right)=K$. Men hvis $V_0>V^m_0$ (som vi vil argumentere for nedenfor), så er $\frac{K}{V_0+K} \left( V^m_0+K\right)<K$. Vil vurderer konsekvensen af denne indvending i afsnit \ref{sec:antag} og finder at alle konklusioner nedenfor er robuste imod denne indvending.
 
 \section{En økonomisk evaluering af aftalen}
 
@@ -182,7 +169,6 @@ Hvordan ville en sådan offentlig aftale havde set ud? Konkret kunne staten selv
 \end{align}
 Statens afkast på en sådan model er også illustreret i Figur \ref{fig:privat_off}. Her vil staten få et større tab, \emph{vis-a-vis} den indgåede aftale, ved en negativ udvikling i DONGs værdi, men modsat vil staten kunne få et positivt afkast, hvis værdien af DONGs egenkapital vokser. $\Omega$ afspejler den gevinst(tab) staten får, ved at købe nye aktie til en for lav (høj) pris ift. den sande markedspris $V_m$. En underliggende antagelse i beregninger nedenfor er derfor, at staten kunne have køb yderligere aktier i DONG til den samme pris som de private investorer. Eftersom staten er hovedaktionaer betragter vi dog dette som en relativt ukontroversiel antagelse. Bemærk også, at hvis $V_m=V_0$så er $\Omega=0$.
 
-%en underliggende antagelse her er, at staten køber aktier i DONG til samme pris som de private investorer og at denne pris er markedsprisen. Som forklaret ovenfor kan man imidlertid argumentere for, at prisen for DONG var under de 31 mia. som selskabet blev handlet for. Vi vurderer konsekvensen af denne indvending i appendix.% \ref{sec:antag}.
 
 På baggrund af dette viser Figur \ref{fig:comp} afkastet på den indgåede aftale \emph{vis-a-vis} det offentlige alternativ. Figuren er lavet under antagelse om  $V_m=V_0=31.5$. Figuren viser, at staten opnår en gevinst på den indgåede aftale, hvis den årlige reale vækst i DONGs værdi bliver mindre end -3 \% per år. Imidlertid er denne gevinst begrænset ift. det tab staten opnår hvis værdien af DONG udvikler sig positivt. For eksempel er gevinsten på aftalen bare 0.4 mia. DKK i det tilfælde hvor værdien af DONG falder med 5 \% per år, mens tabet på aftalen er hele 1.9 mia., hvis DONGs værdi derimod stiger med 5 \% per år. Figuren viser dermed den asymmetriske risikodeling i aftalen: statens realiserer et tab i et adverst scenarie, hvorimod staten ikke får del i gevinsten i et positivt scenarie. Dermed illustrerer figuren også den begrænsede styrke i argumentet om, at staten med aftalen opnår en forsikring imod tab ift. en offentlig aftale. Den risiko for negative udfald som aftalen fjerner \emph{vis-a-vis} en offentlig aftale, er meget lille ift. den mulighed for positive afkast som aftalen fjerner. Således vinder staten f.eks. kun 2.8 mia. i et stærkt negativt scenario, hvor DONGs værdi falder med 30 \% per år. Derimod taber staten hele 20.2 mia. på aftalen i et scenarie, hvor DONGs værdi stiger med 30 \% per år. Samlet kan staten kan maksimalt vinde 3.8 mia. DKK på aftalen, hvilket alene indtræffer i det yderst adverse scenario hvor værdien af DONG falder med mere end 60 \% per år. Et relativt beskedent beløb ift. den store gevinst staten med aftalen fraskriver sig muligheden for. 
 
@@ -203,8 +189,6 @@ Derimod kan vi igennem en såkaldt Monte Carlo simulation beregne et \emph{forve
 
 Et afgørende parameter for resultatet er således markedsprisen på DONG primo 2014 $(V_m)$. Som sagt er dette parameter udkendt, hvorfor vi vil gøre vores beregninger for forskellige værdier af $V_m$. Eftersom $V_m$ iflg. DONGs eget udsagn kunne ligge i intervalet 24 til 40 mia. vil vi anvende hele dette interval i beregningerne nedenfor (TBD: KILDE).
 
-%Specifikt antager vi (1) at DONG i den indgåede aftale blev handlet til markedsprisen (2) at den daglige udvikling i værdien af DONG's egenkapital trækkes fra den historiske fordeling af afkast på børshandlede europæiske electricitets- eller energiselskaber. Herudfra kan vi simulere udviklingen i DONG's værdi fra 2014 til 2018 100 000 gange. Ved hver simulation udregner vi forskellen mellem statens afkast på den indgåede aftale og afkastet på det offentlige alternativ vha. (\ref{eq:Goldman_deal}) og (\ref{eq:gov_capital}).
-
 Hvilken fordeling kan vi antage at DONGs fremtidige værditilvækst trækkes fra? Det mest oplagte ville være at bruge den historiske fordeling af DONG's daglige værditilvækst. Denne er imidlertid ikke kendt, idet selskabet ikke er børsnoteret. Istedet vil vi anvende to alternative historiske afkastfordelinger\footnote{Specifict skaber vi udfra data den empiriske fordeling vha. \texttt{ecdf} i MATLAB. Dette giver os fordelingfunktionen evalueret på alle datapunkter. For at få en fordelingsfunktion evalueret på hele intervalet $[0,1]$ interpolerer vi vha. mellem datapunkter vha \texttt{interp1}.}: (1)  fordelingen fra 13 børsnoterede europæiske electricitetsselskaber og (2) fordelingen fra 8 europæiske olie- og gasselskaber. Vi vurderer (1) til at være den mest egnede, men anvender også (2) som et robusthedscheck. Specifikt anvender vi de daglige vækstrater i aktiepriserne for electricitets-selskaberne CEZ, DRAX, EDF, EON, Fortum, GDF, Iberdrole, RWE og Verbund. Som olie- og gasselskaber anvender vi BP, BG, Bunge, ENI, Shell, Statoil, Tentaris, Total and Transocean. Data er fra \texttt{finance.yahoo.com} og vi anvender dividende- og split-justerede aktiepriser. Desuden korrigerer vi for inflation.\footnote{Vi sætter den historiske inflationsrate til 2 \%.} Vi bruger tilgængelige data frem til primo 2014, eftersom dette er en \emph{ex ante} analyse af aftalen. Inkludering af aktiepriserne frem til ultimo 2014 ændrer dog ikke nævneværdigt på resultaterne nedenfor. Data er illustreret i Figur \ref{fig:data_hist}.
 
 \begin{figure}
@@ -216,28 +200,6 @@ Hvilken fordeling kan vi antage at DONGs fremtidige værditilvækst trækkes fra
 Denne øvelse giver os en forventet fordeling af det absolutte afkast for staten af henholdvis den indgåede private og den alternative offentlige aftale (Tabel \ref{tab:abs_fordeling}). I denne tabel har vi anvendt fordelingen af afkast på europæiske electricitetsselskaber. Vi ser, at det forventede afkast på den indgåede aftale er negativt for alle værdier for $V_m$. Antager vi f.eks. at $V_m=31.5$ mia., så er det forventede absolutte tab på den indgåede aftale 2.4 mia. DKK. Dette afspejler, at staten skal lave en netto betaling til staten i de scenarier, hvor DONGs markedsværdi udvikler sig negativt, mens staten ikke får noget afkast i scenarier hvor DONGs værdi udvikler sig positivt. Dermed er statens sandsynlighed for at få et positivt absolut afkast under den offentlige aftale 47.5 \%, mens den er 0 \% under den indgåede private aftale. Tabel \ref{tab:abs_fordeling} viser også, at standardafvigelsen er markant lavere på den indgåede aftale. Problemet er imidlertid, at staten næsten udelukkende opnår faldet i standardafvigelse ved at fjerne muligheden for at opnå en gevinst. Således viser Tabel \ref{tab:abs_fordeling}, at hovedparten af faldet i standardafvigelse kommer fra fald i variation under et positivt afkast, hvorimod faldet i varians under et negativt afkast er relativt lille.
 
 Vi ser også, at staten absolutte afkast på den private afkast er faldende i $V_m$. Dette afspejler, at hvis $V_m<31.5$ mia.i 2014 så fik staten en gevinst på sin eksisterende aktiebeholdning i DONG ved at lave de private investorer koebe sig ind for dyrt, og denne gevinst er stigende jo lavere $V_m$ reelt var. Hvis modsat $V_m>31.5$ så fik staten et tab på sin aktiebeholdning ved, at lade de private investorer koebe sig ind for biligt. Og dette tab er voksende jo hojere $V_m$ reelt var. På samme måde er statens gevinst på en offentlig aftale stigende i $V_m$.
-
-%\begin{table}[h]
-	%\caption{Fordeling af absolut gevinst p\aa{} privat aftale og offentlig aftale. 10 000 simulationer.}
-	%\label{tab:abs_fordeling}
-	%\begin{tabularx}{\linewidth}{cXcccccr}
-	%\toprule[1pt] 
-	%Fordeling && Gennemsnit, mia. & \multicolumn{3}{c}{Standardafvigelse, mia.}  & Sandsynlighed for gevinst\\
-	%& & &Total & >0 & <0 \\
-	%\hline 
-	%\emph{Offentlig aftale} \\
-	%%\midrule
-		%Europ\ae{}iske elektricitetsselskaber && -0.5  & 9.1  &7.2  & 3.2  & 33.5  \% \\
-	%Europ\ae{}iske gas- og olieselskaber && 5.6  & 13.8  & 12.7  & 2.5  &58.8  \% \\
-	%\emph{Privat aftale} \\
-		%Europ\ae{}iske elektricitetsselskaber && -2.4  & 2.1 &0.0 &2.1 & 0.0  \% \\
-	%Europ\ae{}iske gas- og olieselskaber && -1.2  & 1.7 & 0.0 & 1.7 &0.0 \% \\
-		%\bottomrule[1pt]
-	%\end{tabularx}
-	%\begin{minipage}{\linewidth}
-		%%\footnotesize{Noter: }
-	%\end{minipage}
-%\end{table}
 
 \begin{table}[h]
 	\caption{Fordeling af absolut gevinst p\aa{} privat aftale og offentlig aftale. 10 000 simulationer. Europæiske electricitetsselskaber.}
@@ -293,27 +255,6 @@ Vi ser også, at staten absolutte afkast på den private afkast er faldende i $V
 
 
 Endvidere giver simulationen os en fordeling af afkastet på den indgåede aftale \emph{vis-a-vis} det offentlige alternativ (Tabel \ref{tab:rel_fordeling}).\footnote{Figur \ref{fig:combine1} og \ref{fig:combine2} illustrerer fordelingen af den årlige vækst i DONGs værdi, mens Figur \ref{fig:sim} illustrerer fordelingen af afkastet på den private aftale fratrukket afkastet på den offentlige aftale.} Tabel \ref{tab:rel_fordeling} viser, at det forventede relative tab på aftalen ligger i intervallet 1.6-4.5 mia. afhaengigt af $V_m$. Sandsynligheden for at staten opnår en gevinst på den private aftale er ca. 50 \%, men problemet er som sagt at staten taber markant mere når det relative afkast på aftalen er positivt, end hvad den vinder når det relative afkast på aftalen er negativt. Anvender man istedet afkastfordelingen fra europæiske olie- og gasselskaber, bliver tabet endnu større (6.0-11.7 mia.) og sandsynligheden for gevinst på aftalen endnu mindre (ca. 20  \%). Samlet set peger disse beregninger på, at en offentligt aftale ville have domineret den private aftale i forventet afkast.
-
-%\begin{table}[h]
-	%\caption{Fordeling af gevinst p\aa{} privat aftale ift. offentlig aftale. 10 000 simulationer. TBD}
-	%\label{tab:rel_fordeling}
-	%\begin{tabularx}{\linewidth}{cXcccccr}
-	%\toprule[1pt]
-	%Fordeling && Gennemsnitsgevinst & Standardafvigelse & Sandsynlighed for gevinst\\
-	%\hline 
-	%\emph{Ekslusiv 2014 data} \\
-	%\midrule
-		%Europ\ae{}iske elektricitetsselskaber && -2.1 mia. & 8.15 mia & 58.6  \% \\
-	%Europ\ae{}iske gas- og olieselskaber && -7.0 mia. & 12.8 mia & 33.0  \% \\
-	%\emph{Inklusiv 2014 data} \\
-		%Europ\ae{}iske elektricitetsselskaber && -2.1 mia. & 7.7 mia & 57.6  \% \\
-	%Europ\ae{}iske gas- og olieselskaber && -5.8 mia. & 11.2 mia & 36.4 \% \\
-		%\bottomrule[1pt]
-	%\end{tabularx}
-	%\begin{minipage}{\linewidth}
-		%\footnotesize{Noter: }
-	%\end{minipage}
-%\end{table}
 
 
 \begin{table}[h]
@@ -395,7 +336,6 @@ I denne artikel har vi analyseret den indgåede aftale mellem staten, New Energy
 
 Vores struktur tillader os at bedømme det forventede afkast på den indgåede aftale \emph{vis-a-vis} det offentlige alternativ, hvis man gør antagelser om værdien af DONG's egenkapital i 2014 og sandsynlighedsfordelingen af DONGs fremtidige værditilvækst. I vores benchmark-beregning antager vi, 1) at værdien af DONGs egenkapital var 31.5 mia i 2014, og 2) at DONGs fremtidige værditilvækst trækkes fra den historiske afkastfordeling fra europæiske energiselskaber. Denne beregning giver staten et forventet tab på 2 mia. DKK. Vi viser endvidere, at de private investorer reelt ikke betalte 107 DKK per aktie. Dette skyldes at de private investorer ved købet både fik overdraget  aktier i DONG samt en \emph{put-option}. Vi beregner værdien af optionen til 18 DKK per aktie, hvorfor de private investorer reelt blot betalte 89 kroner per aktie svarende til en værdi på DONGs egenkapital på 26 mia. %I vores benchmark beregning finder vi prisen på optionen på 17.8 DKK hvormed prisen per aktie bliver 89.43 DKK og den totale pris for DONGs egenkapital bliver 26.27 mia DKK.
 
-%Vi finder at et offentligt alternativt, hvor staten selv indskød kapital i DONG, dominerer den indgåede aftale i forventet afkast. Specifikt finder vi at den indgåede aftale gav staten et forventet tab på 2 mia. DKK ift. hvad man kunne havde opnået med en offentlig aftale. Dette resultat er robust overfor en række indvendinger. Den indgåede aftale har godt nok en sandsynlighed på 60 \% for at give bedre afkast end det offentlige alternativ. Men idet staten i den indgåede aftale tager en stor del af downside uden at få del i upside, så opvejer det bedre afkast i dårlige scenarier for DONG's værdiudvikling ikke det dårlige afkast i gode scenarier. Vi finder desuden at DONG's egenkapital reelt blev handlet til 86 DKK per aktie og ikke 107 som oplyst af Finansministeriet. Dette skyldes at de 31.5 mia. var prisen for både egenkapital og salgsret, hvor sidstnævnte har en værdi på 21 DKK per aktie. 
 
 Kan der være andre gode argumenter for den indgåede aftale? Visse iagttagere har fremhævet, at staten igennem de private investorer får adgang til kvalificerede bestyrelsesmedlemmer og kompetence i forbindelse med den forventede børsnotering af DONG. Vi er skeptiske overfor styrken i dette argument. Først og fremmest fordi fortalerne af dette argument overbevisende skal forklare at sådanne kompetencer ikke kunne være købt til mindre end 2 mia DKK.
 
@@ -477,70 +417,6 @@ Samlet pris for optionen bliver derfor: antal solgte aktier*0.6*29.7=1.8 mia.  O
 \label{sec:antag}
 Lad os til slut undersøge robustheden af de forskellige antagelser gjort ovenfor. 
 
-%\subsection{DONG's markedsværdi}
-%
-%Vi antog, at DONGs markedspris var 31.5 mia DKK. Som forklaret ovenfor blev DONGs egenkapital dog reelt handlet til bare 24-26 mia. Hvis dette, og ikke de 31.5 mia, reelt var DONGs markedsværdi, så vil staten alt andet lige få en gevinst på kapitalindskuddet igennem sin eksisterende beholdning af DONG aktier. Dette skyldes, at de private investorer købte aktier i DONG til en kurs højere end markedsprisen. Antag f.eks., at DONGs markedsværdi før kapitalindskuddet var 24.5 mia. DKK. I så fald ejede staten før kapitalindskuddet 81 \% af 24.5 mia (19.6 mia) og efter kapitalindskuddet ejede staten $\frac{0.8*31}{31+11}=59 \%$ af Dongs nye markedsværdi på 24.5+11 mia. DKK (21 mia. DKK). Således fik staten en gevinst på 1.4 mia. DKK  ved at lade de private aktionærer købe DONG til en kurs højere end markedsværdien. 
-%%På samme måde vil værdien af statens eksisterende aktiepost i det offentlige alternativ ændrer sig hvis staten selv indskød kapital til en højere kurs end markedsværdien. 
-%For at tage højde for denne indvending generaliserer vi udtrykket på afkastet på den private og offentlige aftale, respektive. 
-%
-%Statens afkast på den indgåede aftale kan nu skrives således
-%\begin{align}
-%&P= 
-%\begin{dcases} 
-%-0.6K \prod_{i=2014}^{2017} (1+g_i)+0.6\frac{K}{V_H+K}(V_0+K)(1+r)^n +\Omega &\text{     hvis    } K\prod_{i=2014}^{2017}(1+g_k)>(V_0+K)\frac{K}{V_H+K}(1+r)^n \\
-%\text{ $\Omega$} &\text{  ellers }
-%\end {dcases} 
-%%\\
-%%&\text{  hvor } \Omega=\left(\frac{s_0 V_H}{V_H+K}(V_0+K)-s_0V_0 \right) (1+r)^n \nonumber
-%\label{eq:Goldman_deal_mod}
-%\end{align}
-%$V_0$ er den initiale markedsværdi af DONG, $V_H$ er værdien DONG blev handlet til, $K$ er kapitalindskuddet, $s_O$ er statens initiale aktieandel. $\Omega=\left(\frac{s_0 V_H}{V_H+K}(V_0+K)-s_0V_0 \right) (1+r)^n$, hvilket er udtrykket for den gevinst staten opnår på at lade de nye investorer købe egenkapitalen til en pris højere end markedsprisen. $\frac{K}{V_H+K}(V0+K)(1+r)^n $ er værdien af de nye investorers aktier. Dette kan indses ved at observere at $\frac{K}{V_H+K}$ er investorernes andel af aktiekapitalen og $(V0+K)(1+r)^n$ er værdien af hele aktiekapitalen. Observer også at udtrykket kollapser til det oprindelige udtryk i ligning (\ref{eq:Goldman_deal}) hvis prisen for egenkapitalen reelt var 31.5 mia DKK $(V_0=V_H)$.
-%
-%
-%Statens afkast på den offentlige aftale kan nu skrives;
-%\begin{align}
-%P=\left((V_0+K)\frac{s_O V_H+K}{V_H+K}-s_O V_0\right) (1+r)^n-K(1+r_{gov})^n
-%\label{eq:gov_capital_mod}
-%\end{align}
-%Her er det første udtryk på højresiden gevinsten af statens højere aktiebeholdning i DONG, som investeringen giver anledning til. Det andet udtryk er renteudgiften på investeringen. Bemærk, at eftersom staten nu også køber DONGs egenkapital for dyrt, så stiger værdien af statens aktier i DONG med mindre. %TBD: Rimeligt?
-%
-%Ud fra dette viser Tabel \ref{tab:robust_initial_pris} det forventede gevinst på den indgåede aftale ift. det offentlige alternativ som funktion af den sande initiale markedsværdi for DONG. Hvis den initiale markedsværdi af DONG var 26 mia. DKK, hvilket var tilfældet hvis $\sigma=0.15$ og DONG reelt blev handlet til markedsprisen, så er det forventede tab på aftalen 0.9 mia og 5.0 mia DKK under anvendelse af afkastfordelingen for henholdvist europæiske elektricitet samt gas og olie selskaber. 
-%
-%
-%\begin{table}[h]
-%	\caption{Fordeling af gevinst p\aa{} privat aftale ift. offentlig aftale. 10 000 simulationer.}
-%	\label{tab:robust_initial_pris}
-%	\begin{tabularx}{\linewidth}{cXcccccr}
-%	\toprule[1pt]
-%	Fordeling && Gennemsnitsgevinst & Standardafvigelse & Sandsynlighed for gevinst\\
-%	\hline 
-%	\emph{Initial markedsv\ae{}rdi = 24} \\
-%	%\midrule
-%		Europ\ae{}iske elektricitetsselskaber && -0.6 mia. & 6.2 mia & 70.0  \% \\
-%	Europ\ae{}iske gas- og olieselskaber && -4.5 mia. & 10.2 mia & 44.0  \% \\
-%		\emph{Initial markedsv\ae{}rdi = 26} \\
-%	%\midrule
-%		Europ\ae{}iske elektricitetsselskaber && -0.9 mia. & 6.5 mia & 67.1  \% \\
-%	Europ\ae{}iske gas- og olieselskaber && -5.0 mia. & 10.8 mia & 42.0  \% \\
-%			\emph{Initial markedsv\ae{}rdi = 28} \\
-%	%\midrule
-%		Europ\ae{}iske elektricitetsselskaber && -1.3 mia. & 6.9 mia & 64.5  \% \\
-%	Europ\ae{}iske gas- og olieselskaber && -5.5 mia. & 11.2 mia & 39.3  \% \\
-%			\emph{Initial markedsv\ae{}rdi = 30} \\
-%	%\midrule
-%		Europ\ae{}iske elektricitetsselskaber && -1.6 mia. & 7.1 mia & 62.7  \% \\
-%	Europ\ae{}iske gas- og olieselskaber && -6.3 mia. & 11.8 mia & 35.5  \% \\
-%				\emph{Initial markedsv\ae{}rdi = 31.5} \\
-%	%\midrule
-%		Europ\ae{}iske elektricitetsselskaber && -1.8 mia. & 7.2 mia & 60.3  \% \\
-%	Europ\ae{}iske gas- og olieselskaber && -7.1 mia. & 12.9 mia & 33.7  \% \\
-%
-%		\bottomrule[1pt]
-%	\end{tabularx}
-%	\begin{minipage}{\linewidth}
-%		\footnotesize{Noter: Fordeling af afkast er eksklusiv 2014 data.}
-%	\end{minipage}
-%\end{table}
 
 \subsection{Usikkerhed om udnyttelse af salgsret}
 
@@ -562,7 +438,6 @@ Lad os til slut undersøge robustheden af de forskellige antagelser gjort ovenfo
 
 Vi antog endvidere, at fordelingen af historiske afkast på europæiske electricitets- eller olie- og gas-selskaber er repræsentative for fordelingen hvorfra DONGs fremtidige værdi tilvækst trækkes. Denne antagelse kan man naturligvis også stille spørgsmålstegn ved. Vi har dog også prøvet at anvende bredere danske og europæiske aktieklasser uden at få markant anderledes resultater. En del af forklaringen finder man i Figur \ref{fig:comp}. Den viser, at det kræver endog meget negative forventninger, før aftalen ift. det offentlige alternativ har en positiv værdi.
 
-%For det tredje antog vi at DONG's i den indgåede aftale reelt blev handlet til markedsprisen.\footnote{Dette var baggrunden for at vi kunne antage at den fremtidige værditilvækst er stokastisk.} Hvis prisen reelt var lavere så ville aftalen naturligvis se bedre ud fra statens synspunkt. Antager vi f.eks. at prisen reelt var 10 \% lavere end forhandlet, så bliver det forventede tab på aftalen 0,03 mia ved brug af fordelingen fra  elektricitetsselskaber. Bruger man istedet fordelingen fra olie og gas-selskaber bliver det forventede tab 4,8 mia. 
 
 \subsection{Risikoneutralitet}
 
@@ -594,10 +469,6 @@ Vi antog videre, at de private investorer eksekverer deres salgsret primo 2018, 
 \FloatBarrier
 
 
-
-%\subsection{Følsomhedsanalyse}
-%Alternative afkast fordelinger
-%Alternative statsrenter
 
 \newpage
 
