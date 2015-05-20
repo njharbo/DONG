@@ -3,7 +3,8 @@
 \onehalfspacing
 
 %Margin
-\usepackage{geometry} \geometry{left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm}
+\usepackage{geometry}
+\geometry{left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm}
 
 
 %Dansk opsaetning
@@ -18,7 +19,7 @@
 \usepackage[danish=quotes]{csquotes}
 
 
-\title{En Ex Ante Evaluering af DONG Aftalen\thanks{Vi er taknemmelige for kommentarer fra Hannes Malmberg, Hans Henrik Sievertsen, Andreas Noack, Robin Brejnholt, Erik {\"O}berg, Kasper Harbo Hansen, Line Elvstrøm Ekner, Jon Kjellund og Jens Houe Thomsen. Alle udestående fejl er naturligvis vores egne.  Programmer og data er tilgængelige på forespørgsel.} \\ \emph{Foreløbigt og ikke til cirkulation}}
+\title{En Ex Ante Evaluering af DONG Aftalen\thanks{Vi er taknemmelige for kommentarer fra Hannes Malmberg, Hans Henrik Sievertsen, Andreas Noack, Robin Brejnholt, Erik {\"O}berg, Kasper Harbo Hansen, Line Elvstrøm Ekner, Jon Kjellund og Jens Houe Thomsen. Alle udestående fejl er naturligvis vores egne.  Programmer og data er tilgængelige på \texttt{https://github.com/njharbo/DONG}.} \\ \emph{Foreløbigt og ikke til cirkulation}}
 \author{Niels-Jakob Harbo Hansen\thanks{Korresponderende forfatter. Stockholm University, IIES.  Email: \texttt{nielsjakobharbo.hansen@iies.su.se}. } \hspace{0.1 mm} og Guan Yang\thanks{New York University.  Email: \texttt{guan@yang.dk}}}
 \begin{document}
 
@@ -38,7 +39,7 @@ For at beregne statens forventede afkast på aftalen, sammenlignet med det offen
 
 I vores benchmark-beregning antager vi at DONGs markedspris reelt var 107 DKK per aktie (totalt 31,5 mia DKK) i 2014, og altså lig med den pris som  Finansministeriet og DONG har udtalt at DONG's egenkapital blev handlet til. Desuden antager vi, at den fremtidige vækst i DONGs værdi trækkes fra den historiske afkastfordeling fra europæiske elektricitetsselskaber. Med disse antagelser bliver det forventede tab på aftalen på ca. 2.5 mia.\ DKK. Sandsynligheden for at den indgåede aftale giver et bedre afkast end det offentlige alternativ er cirka 50 \%, men qua den asymmetriske afkaststruktur, hvor staten tager en del af downside men ikke får nogen upside, opvejer det bedre afkast, i scenarier hvor værdien af DONGs egenkapital falder, ikke det afkast staten går glip af i  scenarier, hvor DONGs egenkapital stiger i værdi.
 
-En vigtig pointe er dog, at private investorer reelt \emph{ikke} betalte 107 DKK per aktie. De 107 DKK afspejlede prisen for \emph{både} DONGs egenkapital \emph{og} en put-option. For at finde den pris de private investorer reelt betalte for DONGs egenkapital, er det nødvendigt at korrigere de 107 DKK for prisen på put-optionen. I vores beregninger finder vi prisen på optionen i intervallet 14,9 - 27,0 DKK, hvormed prisen for en aktie bliver i intervallet 92,3 - 80.3 DKK. Den totale pris for DONGs egenkapital blev handlet for var dermed i intervallet 23,8-27,1 mia. DKK.
+En vigtig pointe er dog, at private investorer reelt \emph{ikke} betalte 107 DKK per aktie for DONGs egenkapital. De 107 DKK afspejlede prisen for \emph{både} DONGs egenkapital \emph{og} en put-option. For at finde den pris de private investorer reelt betalte for DONGs egenkapital, er det nødvendigt at korrigere de 107 DKK for prisen på put-optionen. I vores beregninger finder vi prisen på optionen i intervallet 14,9 - 27,0 DKK, hvormed prisen for en aktie bliver i intervallet 92,3 - 80.3 DKK. Den totale pris for DONGs egenkapital blev handlet for var dermed i intervallet 23,8-27,1 mia. DKK.
 
 Det er vigtigt at understrege, at der en række usikkerhedsmomenter i disse beregninger. Dette drejer sig om 1) valget af afkastfordeling, 2) fastsættelse af DONGs initiale værdi og 3) valget af volatilitet i beregningen af put-optionens værdi. Vi undersøger derfor beregningernes robusthed ift. disse antagelser i vores appendix.
 
@@ -241,7 +242,7 @@ Vi ser også, at staten absolutte afkast på den private afkast er faldende i $V
 \begin{table}[h]
 	\caption{Fordeling af absolut gevinst p\aa{} privat aftale og offentlig aftale. 10 000 simulationer. Europæiske electricitetsselskaber.}
 	\label{tab:abs_fordeling}
-	\begin{tabularx}{\linewidth}{cXcccccr}
+	\begin{tabularx}{0.95\linewidth}{cXcccccr}
 	\toprule[1pt] 
 	$V_m$ && Gennemsnit, mia. & \multicolumn{3}{c}{Standardafvigelse, mia.}  & Sandsynlighed for gevinst\\
 	& & &Total & >0 & <0 \\
@@ -318,7 +319,7 @@ Endvidere giver simulationen os en fordeling af afkastet på den indgåede aftal
 \begin{table}[h]
 	\caption{Fordeling af gevinst p\aa{} privat aftale ift. offentlig aftale. 10 000 simulationer.}
 	\label{tab:rel_fordeling}
-	\begin{tabularx}{\linewidth}{cXcccccr}
+	\begin{tabularx}{0.95\linewidth}{cXcccccr}
 	\toprule[1pt]
 	$V_m$ && Gennemsnitsgevinst & Standardafvigelse & Sandsynlighed for gevinst\\
 	\hline
@@ -563,11 +564,11 @@ Vi antog endvidere, at fordelingen af historiske afkast på europæiske electric
 
 %For det tredje antog vi at DONG's i den indgåede aftale reelt blev handlet til markedsprisen.\footnote{Dette var baggrunden for at vi kunne antage at den fremtidige værditilvækst er stokastisk.} Hvis prisen reelt var lavere så ville aftalen naturligvis se bedre ud fra statens synspunkt. Antager vi f.eks. at prisen reelt var 10 \% lavere end forhandlet, så bliver det forventede tab på aftalen 0,03 mia ved brug af fordelingen fra  elektricitetsselskaber. Bruger man istedet fordelingen fra olie og gas-selskaber bliver det forventede tab 4,8 mia. 
 
-\subsection{Risikoneutralitet - to be updated}
+\subsection{Risikoneutralitet}
 
-Vi antog, at staten er risikoneutral. Dette er nødvendigt for at kunne bruge \emph{forventet afkast} som kriterium for en vurdering af aftalen. Antager man istedet at staten er risikoavers, og derfor har en nyttefunktion der er faldende i variansen, vil den indgåede aftale alt andet lige se mere attraktiv ud. Imidlertid er der to årsager til, at dette argument ikke er overbevisende. For det første vil det kræve en stor grad af risikoaversion at rationalisere et forventet tab på 2 mia. DKK. For det andet fjerner aftalen, qua salgsretten, først og fremmest \enquote{risikoen} for at få en positivt aftale. 
+Risikoneutralitet er strengt taget en nodvendig antagelse for at anvende \emph{forventede afkast} som de relevante evaluerings kriterium for aftalen. Imidlertid er der ikke grund til at tro at analysen påvirkes naevnevaerdigt om man i stedet antager at staten er risikoadvers. Dette skyldes, at investeringen i DONG udgor en meget lille del af statens samlede formue. Derfor vil statens nyttefunktion (selv under risikoadversion) vaere approksimativt linaer i det formue interval som DONG handlen evalueres i. Samtidigt er det i denne sammenhaeng også vaerd, at huske på aftalen, qua salgsretten, først og fremmest fjerner varians ved at fjerne \enquote{risikoen} for at få et positivt afkast. 
 
-\subsection{Senere eksekvering af salgsret - to be updated}
+\subsection{Senere eksekvering af salgsret}
 
 Vi antog videre, at de private investorer eksekverer deres salgsret primo 2018, hvis markedsværdien af DONG ikke overstiger prisen i salgsretten. Som diskuteret ovenfor kan det også tænkes at salgsretten eksekveres senere. For at undersøge følsomheden af vores resultater ift. denne indvending gentager vi vore beregninger under den antagelse, at salgretten eksekveres senere. Som vist i Tabel \ref{tab:robust_aar} ændrer dette ikke markant det forventede tab på den private aftale ift. det offentlige alternativ.
 
@@ -578,12 +579,12 @@ Vi antog videre, at de private investorer eksekverer deres salgsret primo 2018, 
 	\toprule[1pt]
 	Fordeling && 2017 & 2018 & 2019 & 2020 \\
 	\hline 
-		Europ\ae{}iske elektricitetsselskaber && -1.8 mia. & -2.2 mia. & -2.3 mia. & -2.3 mia. \\
-	Europ\ae{}iske gas- og olie elskaber && -9.4 mia. & -8.5 mia. & -9.5 mia.  &  -9.7 mia.  \\
+		Europ\ae{}iske elektricitetsselskaber && -2.7 mia. & -3.3 mia. & -3.8 mia. & -4.4 mia. \\
+	Europ\ae{}iske gas- og olie elskaber && -7.0 mia. & -9.0 mia. & -11.2 mia.  &  -13.9 mia.  \\
 		\bottomrule[1pt]
 	\end{tabularx}
 	\begin{minipage}{\linewidth}
-		\footnotesize{Noter: Hver observation er gennemsnittet af 1000 simulationer.}
+		\footnotesize{Noter: Hver observation er gennemsnittet af 10 000 simulationer.}
 	\end{minipage}
 \end{table}
 
