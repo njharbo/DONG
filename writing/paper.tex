@@ -105,22 +105,22 @@ Her er $V_0$ den værdi som DONGs eksisterende egenkapital blev forhandlet til, 
 
 \section{En økonomisk evaluering af aftalen}
 
-Var det fra statens synspunkt økonomisk en fornuftig økonomisk aftale? To faktorer er afgørende for svare på dette spørgsmål. (1) Blev DONG handlet til en fair markedspris ? og (2) dominerer aftalen i forventet afkast  alle \emph{outside options}, som staten havde ved indgåelse af aftalen? Lad os vurdere disse to spørgsmål hver for sig.
+Var det fra statens synspunkt økonomisk en fornuftig økonomisk aftale? To faktorer er afgørende for svare på dette spørgsmål. (1) Blev DONG handlet til en fair markedspris? og (2) dominerer aftalen i forventet afkast  alle \emph{outside options,} som staten havde ved indgåelse af aftalen? Lad os vurdere disse to spørgsmål hver for sig.
 
 \subsection{Hvilken pris blev DONG handlet til?}
 
-I aftalen imellem staten og de private investorer blev  DONG's aktiepris fastsat til 107.25 DKK, hvilket svarer til en pris for de eksisterende aktier før kapitaludvidelsen på 31.5 mia.\ DKK \citep{FM2013a}. Hvorvidt denne pris reelt var markedsprisen for DONG primo 2014 er dog svært at afgøre, og vi vil ikke forsøge at give et svar her. 
+I aftalen imellem staten og de private investorer blev  DONG's aktiepris fastsat til 107,25 kr., hvilket svarer til en pris for de eksisterende aktier før kapitaludvidelsen på 31,5 mia.\ kr. \citep{FM2013a}. Hvorvidt denne pris reelt var markedsprisen for DONG primo 2014 er dog svært at afgøre, og vi vil ikke forsøge at give et svar her. 
 
-Imidlertid vil vi påpege, at DONGs egenkapital reelt blev handlet til en lavere pris end 107,25 DKK per aktie. Som først bemærket af \cite{Moeller2014} var de 107,25 DKK per aktie prisen \emph{både} for en aktie og den salgsret som investorerne fik med i købet. Eftersom salgsretten har en værdi, så skal den fratrækkes de 107,25 DKK for at få den reelle pris investorerne betalte for de erhvervede DONG-aktier.
+Imidlertid vil vi påpege, at DONGs egenkapital reelt blev handlet til en lavere pris end 107,25 kr.\ per aktie. Som først bemærket af \cite{Moeller2014} var de 107,25 kr.\ per aktie prisen for en portefølje bestående af en aktie og den salgsret som investorerne fik med i købet. Eftersom salgsretten har en værdi, så skal den fratrækkes de 107,25 kr.\ for at få den reelle pris investorerne betalte for de erhvervede DONG-aktier.
 
-For at estimere prisen på salgsretten benytter vi os derfor af formlen for prisen på put-option på aktie uden udbyttebetalinger fra \cite{Black1973}. \footnote{Iflg. \cite{FM2013a} indføres der pause i udbyttebetalingerne i 2014-15. At tillade for udbyttebetalinger i 2016-17 vil kun styrke resultater indenfor, idet en put options værdi er stigende i dividende udbetalinger.} 
+For at beregne prisen på salgsretten benytter vi derfor formlen for prisen på put-option på aktie uden udbyttebetalinger fra \cite{Black1973}. \footnote{Iflg. \cite{FM2013a} indføres der pause i udbyttebetalingerne i 2014-15. At tillade for udbyttebetalinger i 2016-17 vil kun styrke resultater indenfor, idet en put options værdi er stigende i dividende udbetalinger.} 
 	\begin{align}
 C(s,t)&=N(d_1)S-N(d_2)K \exp^{-r(T-t)} \\
 d_1&= \frac{1}{\sigma\sqrt{T-t}}\left( \ln\left( \frac{S}{K} \right)+\left(r+\frac{\sigma^2}{2} \right)(T-t) \right) \nonumber \\
 d_2&=d_1-\sigma \sqrt{T-t} \nonumber
 \end{align}
 
-Her er $N(\cdot)$ fordelingsfunktionen for normalfordelingen, $T-t$ er tid til optionens udløb, $S$ er spotprisen på den underliggende aktie, $K$ er optionens strikekurs, $r$ er den risikofrie rente og $\sigma$ er volatiliteten på afkast af den underliggende aktie. I vores tilfælde er $T-t=4$, $S$ er 107.25 DKK fratrukket optionsværdien af de 60\% af aktien og vi sætter den risikofrie rente til 1\%. Optionens strikepris, $K$, er 107.25 forrentet med CITA renten plus 2.25 \%. Eftersom DONG ikke er handlet så er $\sigma$ et svært parameter at vurdere. Imidlertid varierede den  beregnede volatilitet på globale energi aktier mellem 0.15-0.20 i 2013 (Figur \ref{fig:option_vol_curve}-\ref{fig:option_vol_730}). Vi sætter derfor $\sigma$ til 0.15, men varierer værdien nedenfor for at sikre robusthed. 
+Her er $N(\cdot)$ fordelingsfunktionen for normalfordelingen, $T-t$ er tid til optionens udløb, $S$ er spotprisen på den underliggende aktie, $K$ er optionens strikekurs, $r$ er den risikofrie rente og $\sigma$ er volatiliteten på afkast af den underliggende aktie. I vores tilfælde er $T-t=4$, $S$ er 107,25 kr.\ fratrukket optionsværdien af de 60\% af aktien og vi sætter den risikofrie rente til 1\%. Optionens strikepris, $K$, er 107,25 forrentet med Cita-renten plus 2,25\%. Eftersom DONG ikke handles regelmæssigt på en børs, er $\sigma$ et svært parameter at estimere. Imidlertid var den implicitte volatilitet på globale energiaktier mellem 0.15 og 0.20 i 2013 (Figur \ref{fig:option_vol_curve}-\ref{fig:option_vol_730}), beregnet på baggrund af observerede optionspriser. Vi sætter derfor $\sigma$ til 0.15, men varierer værdien nedenfor for at sikre robusthed. 
 
 \begin{figure}
 \includegraphics[scale=0.8]{../matlab/figs/implied_vol_curve}
@@ -134,9 +134,9 @@ Her er $N(\cdot)$ fordelingsfunktionen for normalfordelingen, $T-t$ er tid til o
 \label{fig:option_vol_730}
 \end{figure}
 
-Beregningen af den faktiske kurs på aktien er ikke helt ligefrem fordi vi ikke kender spotprisen, $S$, hvilket under normale omstændigheder kan aflæses i aktiemarkedet. Man kan altså ikke  beregne en optionspris og fratrække den salgsprisen på 107,25 DKK. Vi kender dog den samlede pris på en aktie og 60\% af en option, $S + 0.6 C$, som er 107,25 DKK. Black-Scholes er imidlertid monotont stigende i $S$, så det er simpelt at finde en numerisk løsning.
+Beregningen af den faktiske kurs på aktien er ikke helt ligefrem fordi vi ikke kender spotprisen, $S$, hvilket under normale omstændigheder kan aflæses i aktiemarkedet. Man kan altså ikke  beregne en optionspris og fratrække den salgsprisen på 107,25 kr.. Vi kender dog den samlede pris på en aktie og 60\% af en option, $S + 0.6 C$, som er 107,25 kr. Black-Scholes er imidlertid monotont stigende i $S$, så det er simpelt at finde en numerisk løsning på ligningen $S + C(S, t) = 107.25$ for S.
 
-Resultet af disse beregninger er vist i Tabel \ref{tab:vary_sigma}.  Hvis vi bruger vores foretrukne $\sigma$ på 0.15, så bliver prisen på optionen til 18 DKK, hvilket giver en pris per aktie på 89 DKK. Dette vil betyde, at DONG's egenkapital reelt blev handlet til 26.27 mia DKK.\footnote{Antal aktier før aktieudvidelse*aktiepris=(396275261-102565361)*82 DKK.}  Pointen er vigtig idet både \cite{FM2013a} og \cite{DONG2015} har henvist til de 31.5  mia. DKK som prisen på DONGs egenkapital. Dette er imidlertid ikke fuldt  retvisende, idet denne pris \emph{både} afspejlede prisen for egenkapital \emph{og} salgsretten. 
+Resultet af disse beregninger er vist i Tabel \ref{tab:vary_sigma}.  Hvis vi bruger vores foretrukne $\sigma$ på 0.15, så bliver prisen på optionen til 18 kr., hvilket giver en pris per aktie på 89 kr. Dette vil betyde, at DONGs egenkapital reelt blev handlet til 26,27 mia.\ kr..\footnote{Antal aktier før aktieudvidelse*aktiepris=(396275261-102565361)*82 DKK.}  Pointen er vigtig idet både \cite{FM2013a} og \cite{DONG2015} har henvist til de 31.5  mia. DKK som prisen på DONGs egenkapital. Dette er imidlertid ikke fuldt  retvisende, idet denne pris \emph{både} afspejlede prisen for egenkapital \emph{og} salgsretten. 
 
 
 \begin{table}[h]
