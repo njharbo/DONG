@@ -113,6 +113,44 @@ I aftalen imellem staten og de private investorer blev  DONG's aktiepris fastsat
 
 Imidlertid vil vi påpege, at DONGs egenkapital reelt blev handlet til en lavere pris end 107,25 DKK per aktie. Som først bemærket af \cite{Moeller2014} var de 107,25 DKK per aktie prisen \emph{både} for en aktie og den salgsret som investorerne fik med i købet. Eftersom salgsretten har en værdi, så skal den fratrækkes de 107,25 DKK for at få den reelle pris investorerne betalte for de erhvervede DONG-aktier.
 
+Det er imidlertid ikke ligetil, at beregne salgsrettens værdi. Salgsrettens værdi kan estimeres ved hjælp af metoden foreslået af \cite{Black1973}. I denne beregning er salgsrettens værdi er en funktion af (1) aktiernes aktuelle værdi (spot-prisen), (2) prisen salgsretten giver investorerne ret til at sælge til (put-prisen), (3) volatiliteten af aktiens værdi, (4) tiden til udløbet af optionen og (5) den risikofrie rente. (2) og (4) kender vi, mens (3) kan estimeres ved hjælp af historisk data for lign. handlede aktier (se nedenfor). (1) er imidlertid ukendt, idet vi ikke kender den sande markedsværdi af DONG primo 2014. Imidlertid har DONG selv anslået, at værdien lå i intervallet 20-40 mia (TBD) hvorfor vil vi foretage beregningen for hele dette span af værdier. 
+
+Resultatet af beregningen er vist i Tabel X, mens detaljerne bag beregningen er præsenteret i Appendix \ref{sec:app_option}. 
+
+\begin{table}[h]
+	\caption{V\ae{}rdi af option og egenkapital som funktion af $\sigma$, DKK}
+	\label{tab:vary_sigma}
+	\begin{tabularx}{\linewidth}{cXcccccr}
+	\toprule[1pt] 
+	Initial markedsværdi  && Værdi af aktier & Værdi af option & Samlet værdi af aktier og option & Pris Dong blev handlet til \\ \hline 
+20.0000&&6.9841&&2.9812&&9.9653&&23.0367
+21.0000&&7.3333&&2.7845&&10.1178&&23.6001
+22.0000&&7.6825&&2.5923&&10.2748&&24.1505
+23.0000&&8.0317&&2.4054&&10.4372&&24.6856
+24.0000&&8.3810&&2.2247&&10.6056&&25.2031
+25.0000&&8.7302&&2.0509&&10.7810&&25.7009
+26.0000&&9.0794&&1.8846&&10.9639&&26.1771
+27.0000&&9.4286&&1.7263&&11.1549&&26.6303
+28.0000&&9.7778&&1.5765&&11.3543&&27.0593
+29.0000&&10.1270&&1.4354&&11.5624&&27.4633
+30.0000&&10.4762&&1.3032&&11.7794&&27.8418
+31.0000&&10.8254&&1.1800&&12.0054&&28.1948
+32.0000&&11.1746&&1.0656&&12.2402&&28.5224
+33.0000&&11.5238&&0.9599&&12.4837&&28.8251
+34.0000&&11.8730&&0.8626&&12.7356&&29.1037
+35.0000&&12.2222&&0.7734&&12.9956&&29.3591
+36.0000&&12.5714&&0.6919&&13.2634&&29.5923
+37.0000&&12.9206&&0.6178&&13.5385&&29.8045
+38.0000&&13.2698&&0.5506&&13.8205&&29.9970
+39.0000&&13.6190&&0.4898&&14.1089&&30.1711
+40.0000&&13.9683&&0.4350&&14.4033&&30.3280
+	\bottomrule[1pt]
+	\end{tabularx}
+	\begin{minipage}{\linewidth}
+		\footnotesize{Noter: Egne beregninger i \texttt{bs.m} }
+	\end{minipage}
+\end{table}	
+
 For at estimere prisen på salgsretten benytter vi os derfor af formlen for prisen på put-option på aktie uden udbyttebetalinger fra \cite{Black1973}. \footnote{Iflg. \cite{FM2013a} indføres der pause i udbyttebetalingerne i 2014-15. At tillade for udbyttebetalinger i 2016-17 vil kun styrke resultater indenfor, idet en put options værdi er stigende i dividende udbetalinger.} 
 	\begin{align}
 C(s,t)&=N(d_1)S-N(d_2)K \exp^{-r(T-t)} \\
@@ -136,7 +174,7 @@ Her er $N(\cdot)$ fordelingsfunktionen for normalfordelingen, $T-t$ er tid til o
 
 Beregningen af den faktiske kurs på aktien er ikke helt ligefrem fordi vi ikke kender spotprisen, $S$, hvilket under normale omstændigheder kan aflæses i aktiemarkedet. Man kan altså ikke  beregne en optionspris og fratrække den salgsprisen på 107,25 DKK. Vi kender dog den samlede pris på en aktie og 60\% af en option, $S + 0.6 C$, som er 107,25 DKK. Black-Scholes er imidlertid monotont stigende i $S$, så det er simpelt at finde en numerisk løsning.
 
-Resultet af disse beregninger er vist i Tabel \ref{tab:vary_sigma}.  Hvis vi bruger vores foretrukne $\sigma$ på 0.15, så bliver prisen på optionen til 18 DKK, hvilket giver en pris per aktie på 89 DKK. Dette vil betyde, at DONG's egenkapital reelt blev handlet til 26.27 mia DKK.\footnote{Antal aktier før aktieudvidelse*aktiepris=(396275261-102565361)*82 DKK.}  Pointen er vigtig idet både \cite{FM2013a} og \cite{DONG2015} har henvist til de 31.5  mia. DKK som prisen på DONGs egenkapital. Dette er imidlertid ikke fuldt  retvisende, idet denne pris \emph{både} afspejlede prisen for egenkapital \emph{og} salgsretten. 
+Resultet af disse beregninger er vist i Tabel \ref{tab:vary_Vm}.  Hvis vi bruger vores foretrukne $\sigma$ på 0.15, så bliver prisen på optionen til 18 DKK, hvilket giver en pris per aktie på 89 DKK. Dette vil betyde, at DONG's egenkapital reelt blev handlet til 26.27 mia DKK.\footnote{Antal aktier før aktieudvidelse*aktiepris=(396275261-102565361)*82 DKK.}  Pointen er vigtig idet både \cite{FM2013a} og \cite{DONG2015} har henvist til de 31.5  mia. DKK som prisen på DONGs egenkapital. Dette er imidlertid ikke fuldt  retvisende, idet denne pris \emph{både} afspejlede prisen for egenkapital \emph{og} salgsretten. 
 
 
 \begin{table}[h]
@@ -390,6 +428,7 @@ Betragt dernaest situationen hvor markedsprisen på DONGs aktier i slutningen af
 \end{itemize}
 
 \section{Beregning af options og aktie værdi}
+\label{sec:app_option}
 
 De private investorer betalte 107 kroner pr aktie for deres investering i DONG. Denne pris afspejlede imidlertid både prisen for DONGs egenkapital samt en put-option på 60 \% af aktierne. Dvs.
 

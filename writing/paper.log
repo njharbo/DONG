@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.2)  3 MAY 2015 20:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.2)  20 MAY 2015 19:35
 entering extended mode
 **paper.tex
 (C:\Users\nharb\Dropbox\research\DONG\writing\paper.tex
@@ -760,18 +760,18 @@ Package csquotes Info: Redefining alias 'default' -> 'danish'.
 LaTeX Warning: Label `fig:comp' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -821,28 +821,12 @@ LaTeX Font Info:    ... okay on input line 23.
 \makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks36
 ) ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 26.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [1
 
-{C:/Users/nharb/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-Package natbib Warning: Citation `Hansen2014' on page 2 undefined on input line 33.
-
-
-Package natbib Warning: Citation `Bachman2014' on page 2 undefined on input line 45.
-
-
-Package natbib Warning: Citation `Bachman2014' on page 2 undefined on input line 45.
-
-[2]
-
-Package natbib Warning: Citation `FM2013a' on page 3 undefined on input line 63.
-
-
-Package natbib Warning: Citation `FM2013f' on page 3 undefined on input line 65.
-
+{C:/Users/nharb/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 
 ! Package inputenc Error: Unicode char \u8:̊ not set up for use with LaTeX.
 
@@ -850,7 +834,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 ...ONG Energy ligger under et givent niveau.}
+l.56 ...ONG Energy ligger under et givent niveau.}
                                                    Efter denne dato kan stat...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -863,18 +847,18 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 ...nytter salgsretten primo 2018 hvis de på
+l.58 ...nytter salgsretten primo 2018 hvis de på
                                                    dette tidspunkt vurderer ...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 72.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
 
 
 ! Package inputenc Error: Unicode char \u8:̊ not set up for use with LaTeX.
@@ -883,7 +867,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 ...e 2 ligger over prisen i salgsretten, så
+l.62 ...e 2 ligger over prisen i salgsretten, så
                                                    har de private investorer...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -896,45 +880,36 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 ...l periode 2 har de private investorer så
+l.63 ...l periode 2 har de private investorer så
                                                   ledes incitament til, at u...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3] <../figs/perioder.pdf, id=29, 845.1575pt x 597.23125pt>
+[3] <../figs/perioder.pdf, id=27, 845.1575pt x 597.23125pt>
 File: ../figs/perioder.pdf Graphic file (type pdf)
  <use ../figs/perioder.pdf>
-Package pdftex.def Info: ../figs/perioder.pdf used on input line 78.
+Package pdftex.def Info: ../figs/perioder.pdf used on input line 67.
 (pdftex.def)             Requested size: 507.09842pt x 358.3415pt.
 
-Overfull \hbox (35.06718pt too wide) in paragraph at lines 78--79
+Overfull \hbox (35.06718pt too wide) in paragraph at lines 67--68
 [][] 
  []
-
-
-Package natbib Warning: Citation `FM2013a' on page 4 undefined on input line 79.
 
 (C:\Users\nharb\Dropbox\research\DONG\figs\tree_1.tex [4 <C:/Users/nharb/Dropbox/research/DONG/figs/perioder.pdf>]
 [5]) (C:\Users\nharb\Dropbox\research\DONG\figs\tree_2.tex [6])
-<../matlab/figs/private_public_deal.pdf, id=109, 597.23125pt x 845.1575pt>
+<../matlab/figs/private_public_deal.pdf, id=107, 614.295pt x 794.97pt>
 File: ../matlab/figs/private_public_deal.pdf Graphic file (type pdf)
  <use ../matlab/figs/private_public_deal.pdf>
-Package pdftex.def Info: ../matlab/figs/private_public_deal.pdf used on input line 111.
-(pdftex.def)             Requested size: 477.78564pt x 676.12692pt.
+Package pdftex.def Info: ../matlab/figs/private_public_deal.pdf used on input line 100.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-Overfull \hbox (5.75441pt too wide) in paragraph at lines 111--112
+Overfull \hbox (19.40543pt too wide) in paragraph at lines 100--101
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 59.36467pt on input line 114.
-
-
-Package natbib Warning: Citation `FM2013a' on page 7 undefined on input line 124.
-
-
-Package natbib Warning: Citation `Moeller2014' on page 7 undefined on input line 126.
+LaTeX Warning: Float too large for page by 19.21461pt on input line 103.
 
 [7
 
@@ -942,158 +917,107 @@ Package natbib Warning: Citation `Moeller2014' on page 7 undefined on input line
 
 
 ] [8 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/private_public_deal.pdf>]
-
-Package natbib Warning: Citation `Black1973' on page 9 undefined on input line 128.
-
-
-Package natbib Warning: Citation `FM2013a' on page 9 undefined on input line 128.
-
 <../matlab/figs/implied_vol_curve.png, id=126, 578.6418pt x 433.62pt>
 File: ../matlab/figs/implied_vol_curve.png Graphic file (type png)
  <use ../matlab/figs/implied_vol_curve.png>
-Package pdftex.def Info: ../matlab/figs/implied_vol_curve.png used on input line 138.
+Package pdftex.def Info: ../matlab/figs/implied_vol_curve.png used on input line 126.
 (pdftex.def)             Requested size: 462.91406pt x 346.89647pt.
 
 <../matlab/figs/implied_vol_730.png, id=127, 578.6418pt x 433.62pt>
 File: ../matlab/figs/implied_vol_730.png Graphic file (type png)
  <use ../matlab/figs/implied_vol_730.png>
-Package pdftex.def Info: ../matlab/figs/implied_vol_730.png used on input line 144.
+Package pdftex.def Info: ../matlab/figs/implied_vol_730.png used on input line 132.
 (pdftex.def)             Requested size: 462.91406pt x 346.89647pt.
-
-
-Package natbib Warning: Citation `FM2013a' on page 9 undefined on input line 151.
-
-
-Package natbib Warning: Citation `DONG2015' on page 9 undefined on input line 151.
-
-[9] [10 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/implied_vol_curve.png (PNG copy)>] [11 <C:/Users/nharb/Dropbox
-/research/DONG/matlab/figs/implied_vol_730.png (PNG copy)>]
-
-Package natbib Warning: Citation `NB2014' on page 12 undefined on input line 176.
-
-<../matlab/figs/private_less_public_deal.pdf, id=138, 597.23125pt x 845.1575pt>
+ [9]
+[10 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/implied_vol_curve.png (PNG copy)>] [11 <C:/Users/nharb/Dropbox/res
+earch/DONG/matlab/figs/implied_vol_730.png (PNG copy)>] [12]
+<../matlab/figs/private_less_public_deal.pdf, id=141, 614.295pt x 794.97pt>
 File: ../matlab/figs/private_less_public_deal.pdf Graphic file (type pdf)
 
 <use ../matlab/figs/private_less_public_deal.pdf>
-Package pdftex.def Info: ../matlab/figs/private_less_public_deal.pdf used on input line 191.
-(pdftex.def)             Requested size: 477.78564pt x 676.12692pt.
+Package pdftex.def Info: ../matlab/figs/private_less_public_deal.pdf used on input line 178.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-Overfull \hbox (5.75441pt too wide) in paragraph at lines 191--192
+Overfull \hbox (19.40543pt too wide) in paragraph at lines 178--179
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 59.36467pt on input line 194.
+LaTeX Warning: Float too large for page by 19.21461pt on input line 181.
 
-[12] [13 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/private_less_public_deal.pdf>]
-<../matlab/figs/data_hist.png, id=150, 578.6418pt x 434.1018pt>
+<../matlab/figs/data_hist.png, id=142, 578.6418pt x 433.62pt>
 File: ../matlab/figs/data_hist.png Graphic file (type png)
  <use ../matlab/figs/data_hist.png>
-Package pdftex.def Info: ../matlab/figs/data_hist.png used on input line 210.
-(pdftex.def)             Requested size: 462.91406pt x 347.28192pt.
- [14] [15 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/data_hist.png (PNG copy)>] [16]
-<../matlab/figs/afkast_hist_combine_elec.pdf, id=164, 597.23125pt x 845.1575pt>
+Package pdftex.def Info: ../matlab/figs/data_hist.png used on input line 195.
+(pdftex.def)             Requested size: 462.91406pt x 346.89647pt.
+ [13] [14 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/private_less_public_deal.pdf>] [15 <C:/Users/nharb/Dropbox/r
+esearch/DONG/matlab/figs/data_hist.png (PNG copy)>] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 304--308
+[][]
+ []
+
+<../matlab/figs/afkast_hist_combine_elec.pdf, id=165, 614.295pt x 794.97pt>
 File: ../matlab/figs/afkast_hist_combine_elec.pdf Graphic file (type pdf)
 
 <use ../matlab/figs/afkast_hist_combine_elec.pdf>
-Package pdftex.def Info: ../matlab/figs/afkast_hist_combine_elec.pdf used on input line 350.
-(pdftex.def)             Requested size: 477.78564pt x 676.12692pt.
+Package pdftex.def Info: ../matlab/figs/afkast_hist_combine_elec.pdf used on input line 312.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-Overfull \hbox (5.75441pt too wide) in paragraph at lines 350--351
+Overfull \hbox (19.40543pt too wide) in paragraph at lines 312--313
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 59.36467pt on input line 353.
+LaTeX Warning: Float too large for page by 19.21461pt on input line 315.
 
-<../matlab/figs/afkast_hist_combine_oilgas.pdf, id=165, 597.23125pt x 845.1575pt>
+<../matlab/figs/afkast_hist_combine_oilgas.pdf, id=166, 614.295pt x 794.97pt>
 File: ../matlab/figs/afkast_hist_combine_oilgas.pdf Graphic file (type pdf)
 
 <use ../matlab/figs/afkast_hist_combine_oilgas.pdf>
-Package pdftex.def Info: ../matlab/figs/afkast_hist_combine_oilgas.pdf used on input line 356.
-(pdftex.def)             Requested size: 477.78564pt x 676.12692pt.
+Package pdftex.def Info: ../matlab/figs/afkast_hist_combine_oilgas.pdf used on input line 318.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-Overfull \hbox (5.75441pt too wide) in paragraph at lines 356--357
+Overfull \hbox (19.40543pt too wide) in paragraph at lines 318--319
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 59.36467pt on input line 359.
+LaTeX Warning: Float too large for page by 19.21461pt on input line 321.
 
-<../matlab/figs/sim_return.pdf, id=166, 597.23125pt x 845.1575pt>
+<../matlab/figs/sim_return.pdf, id=167, 614.295pt x 794.97pt>
 File: ../matlab/figs/sim_return.pdf Graphic file (type pdf)
  <use ../matlab/figs/sim_return.pdf>
-Package pdftex.def Info: ../matlab/figs/sim_return.pdf used on input line 363.
-(pdftex.def)             Requested size: 477.78564pt x 676.12692pt.
+Package pdftex.def Info: ../matlab/figs/sim_return.pdf used on input line 325.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-Overfull \hbox (5.75441pt too wide) in paragraph at lines 363--364
+Overfull \hbox (19.40543pt too wide) in paragraph at lines 325--326
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 47.36467pt on input line 366.
+LaTeX Warning: Float too large for page by 7.21461pt on input line 328.
 
 [17] [18 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/afkast_hist_combine_elec.pdf>] [19 <C:/Users/nharb/Dropbox/re
 search/DONG/matlab/figs/afkast_hist_combine_oilgas.pdf>] [20 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/sim_retur
-n.pdf>] [21] [22]
+n.pdf>] [21] [22] [23]
 
-Package natbib Warning: Citation `Black1973' on page 23 undefined on input line 439.
+LaTeX Warning: Reference `BS_app' on page 24 undefined on input line 411.
 
-[23]
+<../matlab/figs/return_variance.pdf, id=205, 614.295pt x 794.97pt>
+File: ../matlab/figs/return_variance.pdf Graphic file (type pdf)
+ <use ../matlab/figs/return_variance.pdf>
+Package pdftex.def Info: ../matlab/figs/return_variance.pdf used on input line 426.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-LaTeX Warning: Reference `BS_app' on page 24 undefined on input line 450.
-
-
-! Package amsmath Error: Multiple \label's: label 'BS_app' will be lost.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.475 \end{align}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (34.8511pt too wide) in paragraph at lines 475--475
-[] 
+Overfull \hbox (19.40543pt too wide) in paragraph at lines 426--427
+[][] 
  []
 
-[24]
 
-Package tabularx Warning: X Columns too narrow (table too wide)
-(tabularx)                 on input line 518.
+LaTeX Warning: Float too large for page by 17.27065pt on input line 429.
 
-
-Overfull \hbox (17.37779pt too wide) in alignment at lines 518--518
-[][][][][][][][]
- []
-
-<../matlab/figs/return_variance.png, id=206, 578.6418pt x 433.62pt>
-File: ../matlab/figs/return_variance.png Graphic file (type png)
- <use ../matlab/figs/return_variance.png>
-Package pdftex.def Info: ../matlab/figs/return_variance.png used on input line 529.
-(pdftex.def)             Requested size: 462.91406pt x 346.89647pt.
-
-<../matlab/figs/observed_actual_value.png, id=207, 578.6418pt x 433.62pt>
-File: ../matlab/figs/observed_actual_value.png Graphic file (type png)
-
-<use ../matlab/figs/observed_actual_value.png>
-Package pdftex.def Info: ../matlab/figs/observed_actual_value.png used on input line 535.
-(pdftex.def)             Requested size: 462.91406pt x 346.89647pt.
- [25] [26 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/return_variance.png (PNG copy)>] [27 <C:/Users/nharb/Dropbox
-/research/DONG/matlab/figs/observed_actual_value.png (PNG copy)>] [28]
-(C:\Users\nharb\Dropbox\research\DONG\writing\paper.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-[29] (C:\Users\nharb\Dropbox\research\DONG\writing\paper.aux)
+[24] [25 <C:/Users/nharb/Dropbox/research/DONG/matlab/figs/return_variance.pdf>] [26]
+(C:\Users\nharb\Dropbox\research\DONG\writing\paper.bbl) [27] (C:\Users\nharb\Dropbox\research\DONG\writing\paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1102,37 +1026,34 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13788 strings out of 493921
- 248817 string characters out of 3144877
- 332747 words of memory out of 3000000
- 16762 multiletter control sequences out of 15000+200000
- 20572 words of font info for 49 fonts, out of 3000000 for 9000
+ 13793 strings out of 493921
+ 248813 string characters out of 3144877
+ 333997 words of memory out of 3000000
+ 16769 multiletter control sequences out of 15000+200000
+ 19796 words of font info for 48 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  58i,20n,70p,1671b,1988s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1000.pk> <C:\Users\nharb\AppData\Loca
 l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecbx1200.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0800.pk> <
+nappen\ec\dpi600\ecbx1200.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <
 C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\nharb\AppData\Local\Mi
 KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
-en\ec\dpi600\ecbx1000.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\U
-sers\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\nharb\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ectt0800.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users
-\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1728.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
-i600\ecrm1728.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-
-Output written on paper.pdf (29 pages, 538786 bytes).
+en\ec\dpi600\ecrm0700.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\U
+sers\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\nharb\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0800.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecrm0800.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users
+\nharb\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1728.pk> <C:\Users\nharb\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on paper.pdf (27 pages, 472849 bytes).
 PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
+ 727 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

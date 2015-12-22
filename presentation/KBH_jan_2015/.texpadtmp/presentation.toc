@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {danish}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Aftalen}{8}{0}{2}
+\beamer@sectionintoc {3}{Evaluering}{17}{0}{3}
+\beamer@sectionintoc {4}{Robusthed}{31}{0}{4}
+\beamer@sectionintoc {5}{Konklusion}{36}{0}{5}
+\beamer@sectionintoc {6}{Ekstra slides}{43}{0}{6}
