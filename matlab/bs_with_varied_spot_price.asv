@@ -1,7 +1,7 @@
 clear all;
 K=11;
 tm=4;
-sigma=0.25;
+sigma=0.15;
 r=0.01;
 G=(1+0.0013+0.0225)*(1+0.0044+0.0225)*(1+0.0088+0.0225)*(1+0.0146+0.0225);
 strike=G*K;
@@ -13,7 +13,7 @@ stocks_premoney=stocks_postmoney-stocks_emmission;
 
 a_trade=107.25;
 
-for i=20.5:1:40
+for i=20:0.1:40
     %Value(counter)=i*10^9;
     %spot(counter)=Value(counter)/stocks_premoney;
     %ov(counter)=bash(spot(counter),a_trade*G,sigma,r,tm);
@@ -28,7 +28,6 @@ for i=20.5:1:40
     counter=counter+1;
 end
 
-format bank
 [Value/10^9; spot; 0.6*ov; aktie_handlet; Dong_handlet/10^9]'
 
 %[Value/10^9; spot*stocks_emmission/10^9; ov*0.6*stocks_emmission/10^9; spot*stocks_emmission/10^9+ov*0.6*stocks_emmission/10^9;; Dong_handlet/10^9]'

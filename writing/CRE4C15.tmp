@@ -37,9 +37,9 @@ I artiklen stiller vi spørgsmålet: \emph{Var aftalen økonomisk set bedre end 
 
 For at beregne statens forventede afkast på aftalen, sammenlignet med det offentlige alternativ, er to spørgsmål afgørende. For det første, hvad var den reele markedspris for DONGs egenkapital i starten af 2014? For det andet, hvad er sandsynlighedsfordelingen på væksten i DONGs værdi frem mod 2018? 
 
-I vores benchmark-beregning antager vi at DONGs markedspris reelt var 107,25 DKK per aktie (totalt 31,5 mia DKK) i 2014, og altså lig med den pris som  Finansministeriet og DONG har udtalt at DONG's egenkapital blev handlet til. Desuden antager vi, at den fremtidige vækst i DONGs værdi trækkes fra den historiske afkastfordeling fra europæiske elektricitetsselskaber. Med disse antagelser bliver det forventede tab på aftalen på ca.\ 2,5 mia.\ DKK. Sandsynligheden for at den indgåede aftale giver et bedre afkast end det offentlige alternativ er cirka 50\%, men qua den asymmetriske afkaststruktur, hvor staten tager en del af downside, men ikke får nogen upside, opvejer det bedre afkast, i scenarier hvor værdien af DONGs egenkapital falder, ikke det afkast staten går glip af i  scenarier, hvor DONGs egenkapital stiger i værdi.
+I vores benchmark-beregning antager vi at DONGs markedspris reelt var 107.0 DKK per aktie (totalt 31,5 mia DKK) i 2014, og altså lig med den pris som  Finansministeriet og DONG har udtalt at DONG's egenkapital blev handlet til. Desuden antager vi, at den fremtidige vækst i DONGs værdi trækkes fra den historiske afkastfordeling fra europæiske elektricitetsselskaber. Med disse antagelser bliver det forventede tab på aftalen på ca.\ 2,5 mia.\ DKK. Sandsynligheden for at den indgåede aftale giver et bedre afkast end det offentlige alternativ er cirka 50\%, men qua den asymmetriske afkaststruktur, hvor staten tager en del af downside, men ikke får nogen upside, opvejer det bedre afkast, i scenarier hvor værdien af DONGs egenkapital falder, ikke det afkast staten går glip af i  scenarier, hvor DONGs egenkapital stiger i værdi.
 
-En vigtig pointe er dog, at private investorer reelt \emph{ikke} betalte 107,25 DKK per aktie for DONGs egenkapital. De 107,25 DKK afspejlede prisen for en portefølje bestående af \emph{både} DONGs egenkapital \emph{og} en put-option. For at finde den pris de private investorer reelt betalte for DONGs egenkapital, er det nødvendigt at korrigere de 107.25 DKK for prisen på put-optionen. I vores benchmark beregning, hvor vi antager at DONGs egenkapital reelt var 31.5 mia DKK primo 2014, så finder vi at prisen på optionen var 10,83 DKK, hvormed prisen for en aktie bliver 96,42 DKK. Den totale pris for DONGs egenkapital blev handlet for var dermed 27,2 mia. DKK. 
+En vigtig pointe er dog, at private investorer reelt \emph{ikke} betalte 107 DKK per aktie for DONGs egenkapital. De 107 DKK afspejlede prisen for en portefølje bestående af \emph{både} DONGs egenkapital \emph{og} en put-option. For at finde den pris de private investorer reelt betalte for DONGs egenkapital, er det nødvendigt at korrigere de 107 DKK for prisen på put-optionen. I vores beregninger finder vi prisen på optionen i intervallet 14.9 - 27.0 DKK, hvormed prisen for en aktie bliver i intervallet 92,3 - 80,3 DKK. Den totale pris for DONGs egenkapital blev handlet for var dermed i intervallet 23.8-27.1 mia. DKK.
 
 Det er vigtigt at understrege, at der en række usikkerhedsmomenter i disse beregninger. Dette drejer sig om 1) valget af afkastfordeling, 2) fastsættelse af DONGs initiale værdi og 3) valget af volatilitet i beregningen af put-optionens værdi. Vi undersøger derfor beregningernes robusthed ift. disse antagelser i vores appendix.
 
@@ -121,18 +121,27 @@ d_2&=d_1-\sigma \sqrt{T-t} \nonumber
 \end{align}
 Her er $N(\cdot)$ fordelingsfunktionen for normalfordelingen, $T-t$ er tid til optionens udløb, $S$ er spotprisen på den underliggende aktie, $K$ er optionens strikekurs, $r$ er den risikofrie rente og $\sigma$ er volatiliteten på afkast af den underliggende aktie. I vores tilfælde er $T-t=4$, og vi sætter den risikofrie rente til 1\%. Optionens strikepris, $K$, er 107,25 forrentet med Cita-renten plus 2,25\%. Eftersom DONG ikke handles regelmæssigt på en børs, er $\sigma$ et uobserverbart parameter. Imidlertid var den implicitte volatilitet på globale energiaktier mellem 0.15 og 0.20 i 2013 (Figur \ref{fig:option_vol_curve}-\ref{fig:option_vol_730}), beregnet på baggrund af observerede optionspriser. Vi sætter derfor $\sigma$ til 0.15, men i appendix værdien at sikre robusthed (Tabel TBD). $S$ er ukendt, idet vi ikke kender den sande markedsværdi af DONG primo 2014. Imidlertid har DONG selv anslået, at værdien før aktieudvidelsen lå i intervallet 20-40 mia. DKK (Kilde: TBD) hvorfor vil vi foretage beregningen for hele dette interval. Konkret udregner vi dermed aktieprisen $S$ som den initiale værdi plus kapital indskudet delt med antallet af aktier efter emmisionen. 
 
-Resultatet af disse beregninger er vist i Tabel \ref{tab:vary_egenkapital_vaerdi}. Her har vi for hver initial markedsværdi (søjle 1) udregnet spotprisen per aktie efter emmisionen (søjle 2).\footnote{Den initial markedsvaerdi plus 11 mia DKK delt med antalet af aktier efter emissionen.} Dernaest har vi ved hjaelp af \ref{eq:BS} udregnet vaerdien af de private investorers salgsret per aktie, hvor vi tager hojde for at salgresten kun gives på 60 \% af de koebte aktier (søjle 3). Dernaest har vi i søjle 4 beregnet hvor meget investorerne reelt har betalt for DONGs ejenkapital per aktie\footnote{Prisen per aktie (107.25 DKK) fratrukket vaerdien af salgsretten(søjle 3).}. Endelig viser søjle 5 hvilken initial vaerdifastsaettelse af DONG dette svarer til. 
+Resultatet af disse beregninger er vist i Tabel \ref{tab:vary_ejenkapital_vaerdi}. Her har vi for hver initial markedsværdi (søjle 1) udregnet spotprisen per aktie efter emmisionen (søjle 2).\footnote{Den initial markedsvaerdi plus 11 mia DKK delt med antalet af aktier efter emissionen.} Dernaest har vi ved hjaelp af \ref{eq:BS} udregnet vaerdien af de private investorers salgsret per aktie, hvor vi tager hojde for at salgresten kun gives på 60 \% af de koebte aktier (søjle 3). Dernaest har vi i søjle 4 beregnet hvor meget investorerne reelt har betalt for DONGs ejenkapital per aktie\footnote{Prisen per aktie (107.25 DKK) fratrukket vaerdien af salgsretten(søjle 3).}. Endelig viser søjle 5 hvilken initial vaerdifastsaettelse af DONG dette svarer til. 
  
-Udfra beregningerne i Tabel \ref{tab:vary_ejenkapital_vaerdi} kan vi goere en raekke observation. For det foerste er den pris de private investorer betalte for DONGs egenkapital altid under de 107.25 DKK som angivet i \citep{FM2013a}. Dette skyldes som sagt, at investorerne for denne pris fik både aktier samt en salgsret. Forskellen mellem de 107.25 DKK og den pris investorerne betalte afhaenger af vaerdien af salgsretten. Som det fremgår af Tabel \ref{tab:vary_ejenkapital_vaerdi} er denne vaerdi lavere, jo stoerre markedsvaerdien af DONGs egenkapital var primo 2014. Dette skyldes, at vaerdien af salgsretten er lavere jo hoejere markedsvaerdien af DONG var i 2014, idet det goer det mindre sandsynlighed at salgsretten vil blive brugt. For det andet så fremgår det, at investorerne kun betalte den faktiske pris for DONGs egenkapital såfrem denne primo 2014 var 24.5 mia. DKK. Endelig så viser tabellen, at hvis markedsvaerdien af DONG primo 2014 var lig med 31.5 mia (107.25 DKK per aktie) så betalte investorerne reelt blot 27.2 mia. DKK (96.42 DKK per aktie) når man har korrigeret for vaerdien af DONG optionen.
+Udfra beregningerne i Tabel \ref{tab:vary_ejenkapital_vaerdi} kan vi goere en raekke observation. For det foerste er den pris de private investorer betalte for DONGs egenkapital altid under de 107.25 DKK som angivet i \citep{FM2013a}. Dette skyldes som sagt, at investorerne for denne pris fik både aktier samt en salgsret. Forskellen mellem de 107.25 DKK og den pris investorerne betalte afhaenger af vaerdien af salgsretten. Som det fremgår af Tabel \ref{tab:vary_ejenkapital_vaerdi} er denne vaerdi lavere, jo stoerre markedsvaerdien af DONGs egenkapital var primo 2014. Dette skyldes, at vaerdien af salgsretten er lavere jo hoejere markedsvaerdien af DONG var i 2014, idet det goer det mindre sandsynlighed at salgsretten vil blive brugt. For det andet så fremgår det, at investorerne kun betalte den faktiske pris for DONGs egenkapital såfrem denne primo 2014 var 24.5 mia. DKK. For det tredje så viser tabellen, at hvis markedsvaerdien af DONG primo 2014 var lig med 31.5 mia (107.25 DKK per aktie) så betalte investorerne blot 27.2 mia. DKK (96.42 DKK per aktie) når man har korrigeret for vaerdien af DONG optionen.
+
+
+Beregningen af den faktiske kurs på aktien er ikke helt ligefrem fordi vi ikke kender spotprisen, $S$, hvilket under normale omstændigheder kan aflæses i aktiemarkedet. Man kan altså ikke  beregne en optionspris og fratrække den salgsprisen på 107,25 kr.. Vi kender dog den samlede pris på en aktie og 60\% af en option, $S + 0.6 C$, som er 107,25 kr. Black-Scholes er imidlertid monotont stigende i $S$, så det er simpelt at finde en numerisk løsning på ligningen $S + C(S, t) = 107.25$ for S.
+
+$S$ er 107,25 kr.\ fratrukket optionsværdien af de 60\% af aktien
+
+I denne beregning er salgsrettens værdi er en funktion af (1) aktiernes aktuelle værdi (spot-prisen), (2) prisen salgsretten giver investorerne ret til at sælge til (put-prisen), (3) volatiliteten af aktiens værdi, (4) tiden til udløbet af optionen og (5) den risikofrie rente. (2) og (4) kender vi, mens (3) kan estimeres ved hjælp af historisk data for lign. handlede aktier (se nedenfor). (1) er imidlertid ukendt, idet vi ikke kender den sande markedsværdi af DONG primo 2014. Imidlertid har DONG selv anslået, at værdien lå i intervallet 20-40 mia (TBD) hvorfor vil vi foretage beregningen for hele dette span af værdier. 
+
+Resultatet af beregningen er vist i Tabel X, mens detaljerne bag beregningen er præsenteret i Appendix \ref{sec:app_option}. 
 
 \begin{table}[h]
 	\caption{V\ae{}rdi af option og egenkapital som funktion af initial markedsvaerdi af egenkapitalen,  DKK}
-	\label{tab:vary_egenkapital_vaerdi}
+	\label{tab:vary_ejenkapital_vaerdi}
 	\begin{tabularx}{\linewidth}{cXcccccr}
 	\toprule[1pt] 
-	\small{Markedsværdi}  && \small{Markedsværdi} & \small{Markedsværdi} & \small{Handelspris } & \small{Handelspris} \\ 
-	\small{Samlet egenkapital}  && \small{per aktie} & \small{per option} & \small{per aktier} & \small{Samlet egenkapital} \\
-		\small{Mia. DKK}  && \small{DKK} & \small{DKK} & \small{DKK} & \small{Mia. DKK} \\
+	\small{Markedsværdi}  && \small{Markedsværdi} & \small{Markedsværdi per option} & \small{Handelspris per aktier} & \small{Handelspris af egenkapital} \\ 
+	\small{Samlet egenkapital}  && \small{per aktie} & \small{DKK} & \small{DKK} & \small{Handelspris af egenkapital} \\
+		\small{Mia. DKK}  && \small{DKK} & \small{DKK} & \small{DKK} & \small{Handelspris af egenkapital} \\
 		\hline 
          20.50     &&    79.49     &    22.68&         84.57      &   22.51 \\
          21.50     &&    82.01     &    21.39&         85.86      &   23.02 \\
@@ -161,6 +170,51 @@ Udfra beregningerne i Tabel \ref{tab:vary_ejenkapital_vaerdi} kan vi goere en ra
 	\end{minipage}
 \end{table}	
 
+\begin{table}[h]
+	\caption{V\ae{}rdi af option og egenkapital som funktion af initial markedsvaerdi af egenkapitalen,  DKK}
+	\label{tab:vary_ejenkapital_vaerdi}
+	\begin{tabularx}{\linewidth}{cXcccccr}
+	\toprule[1pt] 
+	\small{Markedsværdi af egenkapital}  && \small{Markedsværdi per aktier} & \small{Markedsværdi per option} & \small{Handelspris per aktier} & \small{Handelspris} \\ \hline 
+		\small{Mia. DKK}  && \small{DKK} & \small{DKK} & \small{DKK} & \small{Handelspris} \\
+		% && \multicolumn{4}{c}{$\sigma=0.15$} \\
+         20.50     &&    79.49     &    22.68&         84.57      &   22.51 \\
+         21.50     &&    82.01     &    21.39&         85.86      &   23.02 \\
+         22.50   &&      84.54     &    20.14&         87.11      &   23.52 \\
+         23.50   &&      87.06     &    18.92&         88.33      &   24.00 \\
+         24.50    &&     89.58     &    17.75&         89.50      &   24.47 \\
+         25.50    &&     92.11     &    16.62&         90.63      &   24.91 \\
+         26.50     &&    94.63     &    15.54&         91.71      &   25.34 \\
+         27.50    &&     97.15     &    14.50&         92.75      &   25.76 \\
+         28.50    &&     99.68     &    13.51&         93.74      &   26.15 \\
+         29.50   &&     102.20     &    12.57&         94.68      &   26.52 \\
+         30.50   &&     104.73     &    11.67&         95.58      &   26.87 \\
+         31.50   &&     107.25     &    10.83&         96.42       &  27.21 \\
+         32.50   &&     109.77     &    10.03&         97.22      &   27.53 \\
+         33.50   &&     112.30     &     9.28&         97.97        & 27.82 \\
+         34.50   &&     114.82     &     8.57&         98.68     &    28.10 \\
+         35.50    &&    117.34     &     7.91&         99.34   &      28.37 \\
+         36.50    &&    119.87     &     7.29&         99.96    &     28.61 \\
+         37.50    &&    122.39      &    6.71&        100.54  &       28.84 \\
+         38.50    &&    124.91     &     6.17&        101.08&         29.06 \\
+         39.50   &&     127.44    &      5.66&        101.59 &        29.26 \\
+	\bottomrule[1pt]
+	\end{tabularx}
+	\begin{minipage}{\linewidth}
+		\footnotesize{Noter: Egne beregninger i \texttt{bs.m} }
+	\end{minipage}
+\end{table}	
+
+For at beregne prisen på salgsretten benytter vi derfor formlen for prisen på put-option på aktie uden udbyttebetalinger fra \cite{Black1973}. \footnote{Iflg. \cite{FM2013a} indføres der pause i udbyttebetalingerne i 2014-15. At tillade for udbyttebetalinger i 2016-17 vil kun styrke resultater indenfor, idet en put options værdi er stigende i dividende udbetalinger.}
+
+	\begin{align}
+C(s,t)&=N(d_1)S-N(d_2)K \exp^{-r(T-t)} \\
+d_1&= \frac{1}{\sigma\sqrt{T-t}}\left( \ln\left( \frac{S}{K} \right)+\left(r+\frac{\sigma^2}{2} \right)(T-t) \right) \nonumber \\
+d_2&=d_1-\sigma \sqrt{T-t} \nonumber
+\end{align}
+
+Her er $N(\cdot)$ fordelingsfunktionen for normalfordelingen, $T-t$ er tid til optionens udløb, $S$ er spotprisen på den underliggende aktie, $K$ er optionens strikekurs, $r$ er den risikofrie rente og $\sigma$ er volatiliteten på afkast af den underliggende aktie. I vores tilfælde er $T-t=4$, $S$ er 107,25 kr.\ fratrukket optionsværdien af de 60\% af aktien og vi sætter den risikofrie rente til 1\%. Optionens strikepris, $K$, er 107,25 forrentet med Cita-renten plus 2,25\%. Eftersom DONG ikke handles regelmæssigt på en børs, er $\sigma$ et svært parameter at estimere. Imidlertid var den implicitte volatilitet på globale energiaktier mellem 0.15 og 0.20 i 2013 (Figur \ref{fig:option_vol_curve}-\ref{fig:option_vol_730}), beregnet på baggrund af observerede optionspriser. Vi sætter derfor $\sigma$ til 0.15, men varierer værdien nedenfor for at sikre robusthed. 
+
 \begin{figure}
 \includegraphics[scale=0.8]{../matlab/figs/implied_vol_curve}
 \caption{Beregnet volatilitet for globale energi aktier under forskellige optionsvarigheder}
@@ -173,27 +227,27 @@ Udfra beregningerne i Tabel \ref{tab:vary_ejenkapital_vaerdi} kan vi goere en ra
 \label{fig:option_vol_730}
 \end{figure}
 
-%Beregningen af den faktiske kurs på aktien er ikke helt ligefrem fordi vi ikke kender spotprisen, $S$, hvilket under normale omstændigheder kan aflæses i aktiemarkedet. Man kan altså ikke  beregne en optionspris og fratrække den salgsprisen på 107,25 kr.. Vi kender dog den samlede pris på en aktie og 60\% af en option, $S + 0.6 C$, som er 107,25 kr. Black-Scholes er imidlertid monotont stigende i $S$, så det er simpelt at finde en numerisk løsning på ligningen $S + C(S, t) = 107.25$ for S.
-%
-%Resultet af disse beregninger er vist i Tabel \ref{tab:vary_sigma}.  Hvis vi bruger vores foretrukne $\sigma$ på 0.15, så bliver prisen på optionen til 18 kr., hvilket giver en pris per aktie på 89 kr. Dette vil betyde, at DONGs egenkapital reelt blev handlet til 26,27 mia.\ kr..\footnote{Antal aktier før aktieudvidelse*aktiepris=(396275261-102565361)*82 DKK.}  Pointen er vigtig idet både \cite{FM2013a} og \cite{DONG2015} har henvist til de 31.5  mia. DKK som prisen på DONGs egenkapital. Dette er imidlertid ikke fuldt  retvisende, idet denne pris \emph{både} afspejlede prisen for egenkapital \emph{og} salgsretten. 
-%
-%\begin{table}[h]
-	%\caption{V\ae{}rdi af option og egenkapital som funktion af $\sigma$, DKK}
-	%\label{tab:vary_sigma}
-	%\begin{tabularx}{\linewidth}{cXcccccr}
-	%\toprule[1pt] 
-	%$\sigma$  && Optionspris & Aktiepris & Samlet pris for optioner &Egenkapitalsv\ae{}rdi \\ \hline 
-	%0.10 && 14.91 & 92.34 & 1.53 mia. & 27.12 mia. \\
-	%0.15 && 17.82 & 89.43 & 1.83 mia. & 26.27 mia. \\
-	%0.20 && 20.91 & 86.34 & 2.14 mia. & 25.36 mia. \\
-	%0.25 && 23.98 & 83.27 & 2.46 mia. & 24.46 mia. \\
-	%0.30 && 26.96 & 80.29 & 2.77 mia. & 23.82 mia. \\
-	%\bottomrule[1pt]
-	%\end{tabularx}
-	%\begin{minipage}{\linewidth}
-		%\footnotesize{Noter: Egne beregninger i \texttt{bs.m} }
-	%\end{minipage}
-%\end{table}
+Beregningen af den faktiske kurs på aktien er ikke helt ligefrem fordi vi ikke kender spotprisen, $S$, hvilket under normale omstændigheder kan aflæses i aktiemarkedet. Man kan altså ikke  beregne en optionspris og fratrække den salgsprisen på 107,25 kr.. Vi kender dog den samlede pris på en aktie og 60\% af en option, $S + 0.6 C$, som er 107,25 kr. Black-Scholes er imidlertid monotont stigende i $S$, så det er simpelt at finde en numerisk løsning på ligningen $S + C(S, t) = 107.25$ for S.
+
+Resultet af disse beregninger er vist i Tabel \ref{tab:vary_sigma}.  Hvis vi bruger vores foretrukne $\sigma$ på 0.15, så bliver prisen på optionen til 18 kr., hvilket giver en pris per aktie på 89 kr. Dette vil betyde, at DONGs egenkapital reelt blev handlet til 26,27 mia.\ kr..\footnote{Antal aktier før aktieudvidelse*aktiepris=(396275261-102565361)*82 DKK.}  Pointen er vigtig idet både \cite{FM2013a} og \cite{DONG2015} har henvist til de 31.5  mia. DKK som prisen på DONGs egenkapital. Dette er imidlertid ikke fuldt  retvisende, idet denne pris \emph{både} afspejlede prisen for egenkapital \emph{og} salgsretten. 
+
+\begin{table}[h]
+	\caption{V\ae{}rdi af option og egenkapital som funktion af $\sigma$, DKK}
+	\label{tab:vary_sigma}
+	\begin{tabularx}{\linewidth}{cXcccccr}
+	\toprule[1pt] 
+	$\sigma$  && Optionspris & Aktiepris & Samlet pris for optioner &Egenkapitalsv\ae{}rdi \\ \hline 
+	0.10 && 14.91 & 92.34 & 1.53 mia. & 27.12 mia. \\
+	0.15 && 17.82 & 89.43 & 1.83 mia. & 26.27 mia. \\
+	0.20 && 20.91 & 86.34 & 2.14 mia. & 25.36 mia. \\
+	0.25 && 23.98 & 83.27 & 2.46 mia. & 24.46 mia. \\
+	0.30 && 26.96 & 80.29 & 2.77 mia. & 23.82 mia. \\
+	\bottomrule[1pt]
+	\end{tabularx}
+	\begin{minipage}{\linewidth}
+		\footnotesize{Noter: Egne beregninger i \texttt{bs.m} }
+	\end{minipage}
+\end{table}
 
 \subsection{Var den private aftale statens bedste mulighed?}
 
@@ -374,9 +428,10 @@ Endvidere giver simulationen os en fordeling af afkastet på den indgåede aftal
 
 I denne artikel har vi analyseret den indgåede aftale mellem staten, New Energy Investment, ATP og PFA. Vi etablerer en beregnings-struktur, som gør det muligt kvantitativt at evaluere den indgåede aftale imod et alternativ, hvor staten indskød den nødvendige ekstra kapital i DONG. Vi har vist, at afkaststrukturen i den indgåede aftale er stærkt asymmetrisk ift. det offentlige alternativ. Dette skyldes, at staten i den indgåede aftale tager en stor del af downside uden at få del i upside. 
 
-Vores struktur tillader os at bedømme det forventede afkast på den indgåede aftale \emph{vis-a-vis} det offentlige alternativ, hvis man gør antagelser om værdien af DONGs egenkapital i 2014 og sandsynlighedsfordelingen af DONGs fremtidige værditilvækst. I vores benchmark-beregning antager vi, 1) at værdien af DONGs egenkapital var 31,5 mia.\ kr.\ i 2014, og 2) at DONGs fremtidige værditilvækst trækkes fra den historiske afkastfordeling fra europæiske energiselskaber. Denne beregning giver staten et forventet tab på 2 mia.\ kr. Vi viser endvidere, at de private investorer reelt ikke betalte 107.25 DKK per aktie. Dette skyldes at de private investorer ved købet både fik overdraget  aktier i DONG samt en put-option. I vores benchmark beregning finder vi optionens værdi til 10,83 DKK per aktie, hvorfor de private investorer reelt blot betalte 96,42 DKK  per aktie svarende til en værdi på DONGs egenkapital på 27,2 mia.\ kr. %I vores benchmark beregning finder vi prisen på optionen på 17.8 DKK hvormed prisen per aktie bliver 89.43 DKK og den totale pris for DONGs egenkapital bliver 26.27 mia DKK.
+Vores struktur tillader os at bedømme det forventede afkast på den indgåede aftale \emph{vis-a-vis} det offentlige alternativ, hvis man gør antagelser om værdien af DONGs egenkapital i 2014 og sandsynlighedsfordelingen af DONGs fremtidige værditilvækst. I vores benchmark-beregning antager vi, 1) at værdien af DONGs egenkapital var 31,5 mia.\ kr.\ i 2014, og 2) at DONGs fremtidige værditilvækst trækkes fra den historiske afkastfordeling fra europæiske energiselskaber. Denne beregning giver staten et forventet tab på 2 mia.\ kr. Vi viser endvidere, at de private investorer reelt ikke betalte 107 kr.\ per aktie. Dette skyldes at de private investorer ved købet både fik overdraget  aktier i DONG samt en put-option. Vi beregner værdien af optionen til 18 kr.\ per aktie, hvorfor de private investorer reelt blot betalte 89 kr.\ per aktie svarende til en værdi på DONGs egenkapital på 26 mia.\ kr. %I vores benchmark beregning finder vi prisen på optionen på 17.8 DKK hvormed prisen per aktie bliver 89.43 DKK og den totale pris for DONGs egenkapital bliver 26.27 mia DKK.
 
-Kan der være andre gode argumenter for den indgåede aftale? Visse iagttagere har fremhævet, at staten igennem de private investorer får adgang til kvalificerede bestyrelsesmedlemmer og kompetence i forbindelse med den forventede børsnotering af DONG. For at drive dette argument, må man dog overbevisende forklare at sådanne kompetencer ikke kunne være købt til mindre end 2 mia.\ kr.
+
+Kan der være andre gode argumenter for den indgåede aftale? Visse iagttagere har fremhævet, at staten igennem de private investorer får adgang til kvalificerede bestyrelsesmedlemmer og kompetence i forbindelse med den forventede børsnotering af DONG. Vi er skeptiske overfor styrken i dette argument. Først og fremmest fordi fortalerne af dette argument overbevisende skal forklare at sådanne kompetencer ikke kunne være købt til mindre end 2 mia.\ kr.
 
 Til slut vil vi gerne understrege, at vi ikke med denne artikel påstår at have givet den endegyldige vurdering af aftalen. Men Finansministeren understregede gentagne gange i 2014 at man havde indgået \enquote{den bedst mulige aftale}. 
 %Imidlertid har ministeriet ikke fremlagt overbevisende argumenter for rigtigheden af denne konklusion.
@@ -446,7 +501,7 @@ d_2&=d_1-\sigma \sqrt{T-t} \nonumber \label{BS_app}
 
 Her er $N(.)$ fordelingsfunktionen for normalfordelingen, $T-t$ er tid til optionens udløb, $S$ er spotprisen på den underliggende aktie, $K$ er optionens strikekurs, $r$ er den risikofrie rente og $\sigma$ er volatiliteten på afkast af den underliggende aktie. 
 
-I vores tilfælde er $T-t=4$, $S$ er 107.25 DKK fratrukket optionsværdien af de 60\% af aktien og vi sætter den risikofrie rente til 1\%. Eftersom DONG ikke er handlet så er $\sigma$ et svært parameter at vurdere. Imidlertid varierede den  beregnede volatilitet på globale energi aktier mellem 0.15-0.20 i 2013 (Figur \ref{fig:option_vol_curve}-\ref{fig:option_vol_730}). Vi sætter derfor $\sigma$ til 0.15, men varierer i appendix værdien (Tabel \ref{tab:robust_vary_sigma}). Optionens strikepris er $107*(\mathrm{cita}+0.025)^4$.
+I vores tilfælde er $T-t=4$, $S$ er 107.25 DKK fratrukket optionsværdien af de 60\% af aktien og vi sætter den risikofrie rente til 1\%. Eftersom DONG ikke er handlet så er $\sigma$ et svært parameter at vurdere. Imidlertid varierede den  beregnede volatilitet på globale energi aktier mellem 0.15-0.20 i 2013 (Figur \ref{fig:option_vol_curve}-\ref{fig:option_vol_730}). Vi sætter derfor $\sigma$ til 0.15, men varierer værdien nedenfor for at sikre robusthed. Optionens strikepris er $107*(\mathrm{cita}+0.025)^4$.
 
 Black-Scholes giver os normalt optionsprisen som funktion af aktieprisen, men i vores tilfælde kan vi blot udtrykke aktieprisen som funktion af optionsprisen. Dermed bliver \eqref{BS_app} en ligning med en ubekendt (optionsprisen) som kan løses numerisk i Matlab vha. en bisection method.
 
@@ -457,96 +512,6 @@ Samlet pris for optionen bliver derfor: antal solgte aktier*0.6*29.7=1.8 mia.  O
 \label{sec:antag}
 Lad os til slut undersøge robustheden af de forskellige antagelser gjort ovenfor. 
 
-\subsection{Salgsrettens volatilitet}
-
-
-\begin{table}[h]
-\centering
-	\caption{V\ae{}rdi af option og egenkapital som funktion af initial markedsvaerdi og options-volatilitet}
-	\label{tab:robust_vary_sigma}
-	\resizebox{1\textwidth}{!}{
-	\begin{tabularx}{\linewidth}{cXcccccr}
-	\toprule[1pt] 
-	\small{Markedsværdi}  && \small{Markedsværdi} & \small{Markedsværdi} & \small{Handelspris } & \small{Handelspris} \\ 
-	\small{Samlet egenkapital}  && \small{per aktie} & \small{per option} & \small{per aktier} & \small{Samlet egenkapital} \\
-		\small{Mia. DKK}  && \small{DKK} & \small{DKK} & \small{DKK} & \small{Mia. DKK} \\
-		\hline 
-		%&\multicolumn{5}{c}{$\sigma=0.15$} \\
-		%\hline 
-         %20.50     &&    79.49     &    22.68&         84.57      &   22.51 \\
-         %21.50     &&    82.01     &    21.39&         85.86      &   23.02 \\
-         %22.50   &&      84.54     &    20.14&         87.11      &   23.52 \\
-         %23.50   &&      87.06     &    18.92&         88.33      &   24.00 \\
-         %24.50    &&     89.58     &    17.75&         89.50      &   24.47 \\
-         %25.50    &&     92.11     &    16.62&         90.63      &   24.91 \\
-         %26.50     &&    94.63     &    15.54&         91.71      &   25.34 \\
-         %27.50    &&     97.15     &    14.50&         92.75      &   25.76 \\
-         %28.50    &&     99.68     &    13.51&         93.74      &   26.15 \\
-         %29.50   &&     102.20     &    12.57&         94.68      &   26.52 \\
-         %30.50   &&     104.73     &    11.67&         95.58      &   26.87 \\
-         %31.50   &&     107.25     &    10.83&         96.42       &  27.21 \\
-         %32.50   &&     109.77     &    10.03&         97.22      &   27.53 \\
-         %33.50   &&     112.30     &     9.28&         97.97        & 27.82 \\
-         %34.50   &&     114.82     &     8.57&         98.68     &    28.10 \\
-         %35.50    &&    117.34     &     7.91&         99.34   &      28.37 \\
-         %36.50    &&    119.87     &     7.29&         99.96    &     28.61 \\
-         %37.50    &&    122.39      &    6.71&        100.54  &       28.84 \\
-         %38.50    &&    124.91     &     6.17&        101.08&         29.06 \\
-         %39.50   &&     127.44    &      5.66&        101.59 &        29.26 \\
-		%\hline 
-		&\multicolumn{5}{c}{$\sigma=0.20$} \\
-		\hline 
-		     20.50  &&       79.49   &      23.94  &       83.31 &         22.01 \\
-         21.50  &&       82.01   &      22.79  &       84.46 &        22.47  \\
-         22.50  &&       84.54   &      21.68  &       85.57 &        22.91 \\
-         23.50  &&       87.06   &      20.61  &       86.64 &        23.33\\
-         24.50  &&       89.58   &      19.57  &       87.68 &        23.74\\
-         25.50  &&       92.11   &      18.57  &       88.68 &        24.14\\
-         26.50  &&       94.63   &      17.62  &       89.63 &        24.52\\
-         27.50  &&       97.15   &      16.70  &       90.55 &        24.88\\
-         28.50  &&       99.68   &      15.81  &       91.44 &        25.23\\
-         29.50  &&      102.20   &      14.97  &       92.28 &        25.57\\
-         30.50  &&      104.73   &      14.16  &       93.09 &        25.89\\
-         31.50  &&      107.25   &      13.39  &       93.86 &        26.19\\
-         32.50  &&      109.77   &      12.66  &       94.59 &        26.48\\
-         33.50  &&      112.30   &      11.96  &       95.29 &        26.76\\
-         34.50  &&      114.82   &      11.29  &       95.96 &        27.03\\
-         35.50  &&      117.34   &      10.65  &       96.60 &        27.28\\
-         36.50  &&      119.87   &      10.05  &       97.20 &        27.52\\
-         37.50  &&      122.39   &       9.48  &       97.77 &        27.74\\
-         38.50  &&      124.91   &       8.94  &       98.31 &        27.96\\
-         39.50  &&      127.44   &       8.42  &       98.83 &        28.16\\
-			\hline 
-		&\multicolumn{5}{c}{$\sigma=0.25$} \\
-		\hline 
-		     20.50  &&       79.49  &       25.51   &      81.74  &       21.39\\
-         21.50  &&       82.01  &       24.48   &      82.77  &       21.80\\
-         22.50  &&       84.54  &       23.48   &      83.77  &       22.19\\
-         23.50  &&       87.06  &       22.52   &      84.73  &       22.58\\
-         24.50  &&       89.58  &       21.59   &      85.66  &       22.95\\
-         25.50  &&       92.11  &       20.69   &      86.56  &       23.30\\
-         26.50  &&       94.63  &       19.82   &      87.43  &       23.65\\
-         27.50  &&       97.15  &       18.99   &      88.26  &       23.98\\
-         28.50  &&       99.68  &       18.18   &      89.07  &       24.29\\
-         29.50  &&      102.20  &       17.41   &      89.84  &       24.60\\
-         30.50  &&      104.73  &       16.67   &      90.58  &       24.90\\
-         31.50  &&      107.25  &       15.96   &      91.29  &       25.18\\
-         32.50  &&      109.77  &       15.27   &      91.98  &       25.45\\
-         33.50  &&      112.30  &       14.61   &      92.64  &       25.71\\
-         34.50  &&      114.82  &       13.98   &      93.27  &       25.96\\
-         35.50  &&      117.34  &       13.37   &      93.88   &      26.20\\
-         36.50  &&      119.87  &       12.79   &      94.46  &       26.43\\
-         37.50  &&      122.39  &       12.24   &      95.01  &       26.65\\
-         38.50  &&      124.91  &       11.70   &      95.55  &       26.86\\
-         39.50  &&      127.44  &       11.19   &      96.06  &       27.06\\
-	\bottomrule[1pt]
-	\end{tabularx}}
-	\begin{minipage}{\linewidth}
-		\footnotesize{Noter: Egne beregninger i \texttt{bs.m} }
-	\end{minipage}
-\end{table}	
-
-\clearpage 
 
 \subsection{Usikkerhed om udnyttelse af salgsret}
 

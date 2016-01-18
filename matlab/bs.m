@@ -49,7 +49,7 @@ i=1
    %s is spotprice
             
    
-   %% GRatis option
+%% GRatis option
    
  
 %Set parameters
