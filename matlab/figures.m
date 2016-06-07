@@ -4,7 +4,7 @@
 %Make figure under assumption of sand=31.5
 nj=figure(1)
 %subplot(2,1,1);
-title('Statens absolutte afkast paa privat og offentlig aftale','Fontsize',14)
+title('Statens absolutte afkast paa privat og offentlig aftale (ult. 2017)','Fontsize',14)
 ylabel('Mia. DKK','Fontsize',14)
 xlabel('Aarlig vaekst i vaerdien af DONGs egenkapital, %','Fontsize',14)
 axis([-30 30 -20 20])
@@ -17,12 +17,46 @@ hold off
 set(gca, 'Fontsize',14)
 saveas(nj, 'figs/private_public_deal.pdf')
 
+%Figure illustrating the private deal
+%Make figure under assumption of sand=31.5
+nj=figure(1)
+%subplot(2,1,1);
+title('Statens absolutte afkast paa privat aftale (ult. 2017)','Fontsize',14)
+ylabel('Mia. DKK','Fontsize',14)
+xlabel('Aarlig vaekst i vaerdien af DONGs egenkapital, %','Fontsize',14)
+axis([-30 30 -20 20])
+hold on
+plot(data(:,1), data(:,3,2)+data(:,3,1)-data(:,5,2)-data(:,5,1),'linestyle','--','linewidth',4,'color','red')
+hold on
+%plot(data(:,1), data(:,4,2)+data(:,4,1)-data(:,5,2)-data(:,5,1),'linestyle','-','linewidth',4, 'color','blue')
+legend('Privat','Location','SouthEast')
+hold off
+set(gca, 'Fontsize',14)
+saveas(nj, 'figs/private_deal.pdf')
+
+%Figure illustrating the public deal
+%Make figure under assumption of sand=31.5
+nj=figure(1)
+%subplot(2,1,1);
+title('Statens absolutte afkast paa offentlig aftale (ult. 2017)','Fontsize',14)
+ylabel('Mia. DKK','Fontsize',14)
+xlabel('Aarlig vaekst i vaerdien af DONGs egenkapital, %','Fontsize',14)
+axis([-30 30 -20 20])
+hold on
+%plot(data(:,1), data(:,3,2)+data(:,3,1)-data(:,5,2)-data(:,5,1),'linestyle','--','linewidth',4,'color','red')
+hold on
+plot(data(:,1), data(:,4,2)+data(:,4,1)-data(:,5,2)-data(:,5,1),'linestyle','-','linewidth',4, 'color','blue')
+legend('Offentlig','Location','SouthEast')
+hold off
+set(gca, 'Fontsize',14)
+saveas(nj, 'figs/public_deal.pdf')
+
 %Figure illustrating difference between the private and public deal
 %Make figure under assumption of sand=31.5
 nj=figure(1)
 plot(data(:,1), data(:,3,1)+data(:,3,2)-data(:,4,1)-data(:,4,2),'linewidth',4,'color','blue')
 hold on
-title('Afkast paa statslig minus afkast paa privat aftale','Fontsize',14)
+title('Afkast paa statslig minus afkast paa privat aftale (ult. 2017)','Fontsize',14)
 ylabel('Mia. DKK','Fontsize',14)
 xlabel('Aarlig vaekst i vaerdien af DONGs egenkapital, %','Fontsize',14)
 refline(0,0)
@@ -37,23 +71,27 @@ saveas(nj, 'figs/private_less_public_deal.pdf')
 nj=figure(3)
 subplot(2,1,1);
 plot(data(:,1), data(:,3,1)+data(:,3,2)-data(:,4,1)-data(:,4,2))
+hold on
+plot(40, [-60:1:60] )
 refline(0,0)
 title('Afkast af privat aftale minus offentlig aftale', 'Fontsize',14)
 ylabel('Mia. DKK','Fontsize',14)
 %xlabel('?rlig v?kst i v?rdien af DONGs egenkapital, %')
 set(gca,'xlim',[-100 10])
-axis([-60 60 -60 10])
+axis([-60 60 -30 10])
 set(gca, 'Fontsize',14)
 
 subplot(2,1,2);
 hist(100*rsave(1,:),100)
+hold on
+plot(40, [0:1:400] )
 title('Fordeling af aarlig vaekst, baseret paa europaeiske electricitets-selskaber', 'Fontsize',14)
 ylabel('Antal', 'Fontsize',14)
 xlabel('Aarlig vaekst i vaerdien af DONGs egenkapital, %', 'Fontsize',14)
 set(gca,'xlim',[-100 10])
-axis([-60 60 0 500])
+axis([-60 60 0 400])
 set(gca, 'Fontsize',14)
-saveas(nj, 'figs/afkast_hist_combine_elec.pdf')
+saveas(nj, 'figs/afkast_hist_combine_elec_ny.pdf')
 
 close all;
 
