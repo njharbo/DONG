@@ -113,7 +113,7 @@ $P=\begin{dcases}
 Her er $V_0$ den værdi som DONGs eksisterende egenkapital blev forhandlet til primo 2014, mens $V_m$ var den sande markedsværdi af DONG. $V_0$ ved vi er 31.5 mia. kr., men vi kan ikke direkte observere $V_m$. $\Omega$ bliver dermed den gevinst (tab) som staten får ved at lade de private investorer købe sig ind i DONG til en for høj (lav) pris, hvor $sg_0=0.81$ er statens initial aktieandel i DONG. Bemærk at $\Omega=0$ hvis $V_m=V_0$. For nu antager vi, at $V_m=V_0$, men vi vil diskutere dette nærmere nedenfor. Figur \ref{fig:privat_off} viser, at staten vil få et absolut tab på aftalen, hvis markedsværdien af DONG vokser med mindre end 2.9\% per år. I dette tilfælde skal staten foretage en nettoudbetaling til de private investorer, idet den risikofrie forrentning som staten har garanteret investorerne overstiger forrentningen af aktierne i DONG. Samtidig viser figuren den asymmetriske afkaststruktur i aftalen set fra statens synspunkt: I tilfælde af en negativ udvikling i værdien af DONG realiserer staten et negativt afkast på aftalen, men staten realiserer ikke et tilsvarende positivt afkast på aftalen i tilfælde af en positiv udvikling i DONGs værdi. 
 
 \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/private_public_deal}
+\centerline{\includegraphics[scale=0.8]{../matlab/figs/private_public_deal_guan}}
 \caption{Illustration af statens absolutte afkast, hhv. den indg\aa{}ede private aftale og en alternativ offentlig aftale som funktion af den \aa{}rlige v\ae{}kst i DONGs egenkapital. }
 \label{fig:privat_off}
 \end{figure}
@@ -180,13 +180,13 @@ Udfra beregningerne i Tabel \ref{tab:vary_egenkapital_vaerdi} kan vi gøre en r�
 \end{table}	
 
 \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/implied_vol_curve}
-\caption{Beregnet volatilitet for globale energi aktier under forskellige optionsvarigheder}
+\centerline{\includegraphics[scale=0.8]{../matlab/figs/implied_vol_curve_guan}}
+\caption{Beregnet volatilitet for globale energiaktier (iShares Global Energy, IXC) under forskellige optionsvarigheder}
 \label{fig:option_vol_curve}
 \end{figure}
 
 \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/implied_vol_730}
+\centerline{\includegraphics[scale=0.8]{../matlab/figs/implied_vol_730_guan}}
 \caption{Beregnet volatilitet for globale energi aktier under en optionsvarighed på 730 dage}
 \label{fig:option_vol_730}
 \end{figure}
@@ -236,7 +236,7 @@ Figuren viser dermed den asymmetriske risikodeling i aftalen: Staten realiserer 
 Spørgsmålet er derfor om staten har købt forsikringen for dyrt? Aftalen fjerner først og fremmest \enquote{risikoen} for et positivt afkast, mens risikoen for et negativt afkast stadig i høj grad skal finansieres af staten. Er det ikke værd at løbe risikoen for et lille tab når tingene går skidt, hvis man dermed kan få en stor gevinst, når tingene går godt?
 
 \begin{figure}
-\includegraphics[scale=0.8, trim=0mm 0mm 0mm 0mm]{../matlab/figs/private_less_public_deal.pdf}
+\centerline{\includegraphics[scale=0.8, trim=0mm 0mm 0mm 0mm]{../matlab/figs/private_less_public_deal_guan.pdf}}
 \caption{Illustration af forskellen mellem statens absolutte afkast p\aa{} den indg\aa{}ede private aftale og den alternative offentlige aftale som funktion af den \aa{}rlige v\ae{}kst i DONGs egenkapital. }
 \label{fig:comp}
 \end{figure}
@@ -253,7 +253,7 @@ En afgørende parameter for resultatet er således markedsprisen på DONG primo 
 Hvilken fordeling kan vi antage, at DONGs fremtidige værditilvækst trækkes fra? Det mest oplagte ville være at bruge den historiske fordeling af daglige værditilvækster i DONG. Denne er imidlertid ikke kendt, idet selskabet ikke er børsnoteret. I stedet vil vi anvende to alternative historiske afkastfordelinger:\footnote{Specifikt skaber vi ud fra data den empiriske fordeling ved hjælp af funktionen \texttt{ecdf} i MATLAB. Dette giver os fordelingfunktionen evalueret på alle datapunkter. For at få en fordelingsfunktion evalueret på hele intervallet $[0,1]$ interpolerer vi ved hjælp af mellem datapunkter ved brug af funktionen \texttt{interp1}.} (1)  fordelingen fra 13 børsnoterede europæiske elektricitetsselskaber, og (2) fordelingen fra 8 europæiske olie- og gasselskaber. Vi vurderer (1) til, at være den mest egnede, men anvender også (2) som et robusthedscheck. Specifikt anvender vi de daglige vækstrater i aktiepriserne for electricitetsselskaberne CEZ, DRAX, EDF, EON, Fortum, GDF, Iberdrole, RWE og Verbund. Som olie- og gasselskaber anvender vi BP, BG, Bunge, ENI, Shell, Statoil, Tentaris, Total og Transocean. Data er fra \texttt{finance.yahoo.com}, og vi anvender dividende- og splitjusterede aktiepriser. Desuden korrigerer vi for inflation.\footnote{Vi sætter den historiske inflationsrate til 2\%.} Vi bruger tilgængelige data frem til primo 2014, eftersom dette er en \emph{ex ante} analyse af aftalen. Inkludering af aktiepriserne frem til ultimo 2014 ændrer dog ikke nævneværdigt på resultaterne nedenfor. Data er illustreret i Figur \ref{fig:data_hist}.
 
 \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/data_hist}
+\includegraphics[scale=0.8]{../matlab/figs/data_hist_guan}
 \caption{Fordeling af daglige v\ae{}kstrater i europ\ae{}iske energiselskaber}
 \label{fig:data_hist}
 \end{figure}
@@ -263,7 +263,7 @@ Denne øvelse giver os en forventet fordeling af det absolutte afkast for staten
 Vi ser også fra Tabel \ref{tab:abs_fordeling}, at statens absolutte afkast på den private aftale er faldende i $V_m$. Dette afspejler, at hvis $V_m$ var mindre end $31.5$ mia. kr. i primo 2014 så fik staten en gevinst på sin eksisterende aktiebeholdning i DONG ved at lave de private investorer købe sig ind for dyrt, og denne gevinst er større jo lavere $V_m$ reelt var. Hvis modsat $V_m$ var større end $31.5$ mia.\ kr., så fik staten et tab på sin aktiebeholdning ved, at lade de private investorer købe sig ind for billigt. Dette tab er stigende jo højere $V_m$ reelt var. På samme måde er statens gevinst på en offentlig aftale stigende i $V_m$.
 
 \begin{table}[h]
-	\caption{Fordeling af absolut gevinst p\aa{} privat aftale og offentlig aftale. 10 000 simulationer. Europæiske electricitets-selskaber.}
+	\caption{Fordeling af absolut gevinst p\aa{} privat aftale og offentlig aftale. 10 000 simulationer. Europæiske electricitetsselskaber.}
 	\label{tab:abs_fordeling}
 	\begin{tabularx}{0.95\linewidth}{cXcccccr}
 	\toprule[1pt] 
@@ -369,20 +369,20 @@ Desuden giver simulationen os en fordeling af afkastet på den indgåede aftale 
 
 
 \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/afkast_hist_combine_elec}
+\centerline{\includegraphics[scale=0.8]{../matlab/figs/afkast_hist_combine_elec_guan}}
 \caption{Afkast af privat i forhold til offentlig aftale som funktion af den årlige v\ae{}kstrate i DONGs v\ae{}rdi og fordelingen af forventet \aa{}rlig afkast, baseret p\aa{} europ\ae{}iske electricitets-selskaber.}
 \label{fig:combine1}
 \end{figure}
 
 \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/afkast_hist_combine_oilgas}
+\centerline{\includegraphics[scale=0.8]{../matlab/figs/afkast_hist_combine_oilgas_guan}}
 \caption{Afkast af privat i forhold til offentlig aftale som funktion af den \aa{}rlige v\ae{}kstrate i DONGs v\ae{}rdi og fordelingen af forventet \aa{}rligt afkast, baseret p\aa{} europ\ae{}iske olie- og gasselskaber.}
 \label{fig:combine2}
 \end{figure}
 
 
 \begin{figure}
-\includegraphics[scale=0.8]{../matlab/figs/sim_return.pdf}
+\centerline{\includegraphics[scale=0.8]{../matlab/figs/sim_return_guan}}
 \caption{Fordeling af gevinst på privat aftale i forhold til offentlig aftale. 10 000 simulationer. }
 \label{fig:sim}
 \end{figure}
