@@ -265,7 +265,9 @@ Vi ser også fra Tabel \ref{tab:abs_fordeling}, at statens absolutte afkast på 
 \begin{table}[h]
 	\caption{Fordeling af absolut gevinst p\aa{} privat aftale og offentlig aftale. 10 000 simulationer. Europæiske electricitetsselskaber.}
 	\label{tab:abs_fordeling}
-	\begin{tabularx}{0.95\linewidth}{cXcccccr}
+% Jeg har ændret dette til tabular fordi jeg havde problemer. Du kan ændre tilbage hvis det fungerer for dig.
+\begin{center}
+	\begin{tabular}{cXcccccr}
 	\toprule[1pt] 
 	$V_m$ && Gennemsnit, mia. & \multicolumn{3}{c}{Standardafvigelse, mia.}  & Sandsynlighed for gevinst\\
 	& & &Total & >0 & <0 \\
@@ -308,10 +310,8 @@ Vi ser også fra Tabel \ref{tab:abs_fordeling}, at statens absolutte afkast på 
  %40.5000&&1.2727&9.2406&7.6275&2.8868&0.4366\\
 
 \bottomrule[1pt]
-	\end{tabularx}
-	\begin{minipage}{\linewidth}
-		%\footnotesize{Noter: }
-	\end{minipage}
+	\end{tabular}
+\end{center}
 \end{table}
 
 Desuden giver simulationen os en fordeling af afkastet på den indgåede aftale \emph{vis-\`{a}-vis} det offentlige alternativ (Tabel \ref{tab:rel_fordeling}).\footnote{Figur \ref{fig:combine1} og \ref{fig:combine2} illustrerer fordelingen af den årlige vækst i DONGs værdi, mens Figur \ref{fig:sim} illustrerer fordelingen af afkastet på den private aftale fratrukket afkastet på den offentlige aftale.} Tabel \ref{tab:rel_fordeling} viser, at det forventede relative tab på aftalen ligger i intervallet 1.6--4.5 mia.\ kr.\ afhængigt af værdien af $V_m$. Sandsynligheden for, at staten opnår en gevinst på den private aftale er ca.\ 50\%, men staten taber som sagt markant mere når det relative afkast på aftalen er negativt, end hvad den vinder når det relative afkast på aftalen er positivt. Anvender man istedet afkastfordelingen fra europæiske olie- og gasselskaber, bliver tabet endnu større (6.0--11.7 mia.\ kr.) og sandsynligheden for gevinst på aftalen endnu mindre (ca.\ 20\%). Samlet set peger disse beregninger på, at en offentligt aftale ville have domineret den private aftale i forventet afkast.
@@ -320,7 +320,8 @@ Desuden giver simulationen os en fordeling af afkastet på den indgåede aftale 
 \begin{table}[h]
 	\caption{Fordeling af gevinst p\aa{} privat aftale i forhold til offentlig aftale. 10 000 simulationer.}
 	\label{tab:rel_fordeling}
-	\begin{tabularx}{0.95\linewidth}{cXcccccr}
+\begin{center}
+	\begin{tabular}{cXcccccr}
 	\toprule[1pt]
 	$V_m$ && Gennemsnitsgevinst & Standardafvigelse & Sandsynlighed for gevinst\\
 	\hline
@@ -361,10 +362,8 @@ Desuden giver simulationen os en fordeling af afkastet på den indgåede aftale 
 %39.5000&&-11.3022&15.2763& 0.1631\\
 %40.5000&&-11.6918&15.6248& 0.1601\\
 		\bottomrule[1pt]
-	\end{tabularx}
-	\begin{minipage}{\linewidth}
-		\footnotesize{Noter: }
-	\end{minipage}
+	\end{tabular}
+\end{center}
 \end{table}
 
 
@@ -490,7 +489,7 @@ Ovenfor antog vi, at $\sigma=0.15$. I Tabel \ref{tab:robust_vary_sigma} nedenfor
 	\caption{V\ae{}rdi af option og egenkapital som funktion af initial markedsværdi og options-volatilitet}
 	\label{tab:robust_vary_sigma}
 	\resizebox{1\textwidth}{!}{
-	\begin{tabularx}{\linewidth}{cXcccccr}
+	\begin{tabular}{cXcccccr}
 	\toprule[1pt] 
 	\small{Markedsværdi}  && \small{Markedsværdi} & \small{Markedsværdi} & \small{Handelspris } & \small{Handelspris} \\ 
 	\small{Samlet egenkapital}  && \small{per aktie} & \small{per option} & \small{per aktier} & \small{Samlet egenkapital} \\
@@ -565,7 +564,7 @@ Ovenfor antog vi, at $\sigma=0.15$. I Tabel \ref{tab:robust_vary_sigma} nedenfor
          38.50  &&      124.91  &       11.70   &      95.55  &       26.86\\
          %39.50  &&      127.44  &       11.19   &      96.06  &       27.06\\
 	\bottomrule[1pt]
-	\end{tabularx}}
+	\end{tabular}}
 	\begin{minipage}{\linewidth}
 		\footnotesize{Noter: Egne beregninger i \texttt{bs.m} }
 	\end{minipage}
