@@ -7,7 +7,6 @@ run parameters.m
 run stockdata.m;
 
 %% Structure of deals
-
 clear data
 i=1
 for r=-1:0.01:2
