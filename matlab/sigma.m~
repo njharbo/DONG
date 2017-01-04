@@ -43,7 +43,7 @@ for i=1:length(data)
 end
 
 time_indicator=time_function(dates)
-format short
+format long g
 
 %Figure: kurve
 surf(time_indicator, days, hej)
